@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-outfit: Outfit;
+
+  /* font sizes */
+  --font-size-xl: 20px;
+
+  /* Colors */
+  --neutral-700: #444;
+  --color-black: #000;
+
+  /* Paddings */
+  --padding-base: 16px;
+
+  /* border radiuses */
+  --br-81xl: 100px;
+}
