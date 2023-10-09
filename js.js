@@ -9,45 +9,43 @@ coachList.forEach(function(coach) {
   coachSelect.appendChild(option);
 });
 
-fetch('distance.json')
-.then(response => response.json())
-.then(data => {
-  var table = document.getElementById('table-sort');
-  var tbody = table.querySelector('tbody');
-  data.forEach(row => {
-    var tr = document.createElement('tr');
-    tr.innerHTML = `
-      <td>${row.number}</td>
-      <td>${row.Fio}</td>
-      <td>${row.Date}</td>
-      <td>${row.Discharge}</td>
-      <td>${row.Place}</td>
-      <td>${row.Time}</td>
-      <td>${row.Coach}</td>
-    `;
-    if (row.Place === 1) {
-      tr.classList.add('gold');
-    }
-    tbody.appendChild(tr);
-  });
+// fetch('distance.json')
+// .then(response => response.json())
+// .then(data => {
+//   var table = document.getElementById('table-sort');
+//   var tbody = table.querySelector('tbody');
+//   data.forEach(row => {
+//     var tr = document.createElement('tr');
+//     tr.innerHTML = `
+//       <td>${row.number}</td>
+//       <td>${row.Fio}</td>
+//       <td>${row.Date}</td>
+//       <td>${row.Discharge}</td>
+//       <td>${row.Place}</td>
+//       <td>${row.Time}</td>
+//       <td>${row.Coach}</td>
+//     `;
+//     if (row.Place === 1) {
+//       tr.classList.add('gold');
+//     }
+//     tbody.appendChild(tr);
+//   });
 
-  coachSelect.addEventListener('change', function() {
-    var selectedCoach = coachSelect.value;
+//   coachSelect.addEventListener('change', function() {
+//     var selectedCoach = coachSelect.value;
 
-    tbody.querySelectorAll('tr').forEach(row => {
-      if (selectedCoach === '' || selectedCoach === 'Все тренера:' || row.cells[6].textContent === selectedCoach) {
-        row.classList.remove('hidden');
-      } else {
-        row.classList.add('hidden');
-      }
-    });
-  });
-  
-  // показываем все ряды таблицы по умолчанию
-  tbody.querySelectorAll('tr').forEach(row => {
-    row.classList.remove('hidden');
-  });
-});
+//     tbody.querySelectorAll('tr').forEach(row => {
+//       if (selectedCoach === '' || selectedCoach === 'Все тренера:' || row.cells[6].textContent === selectedCoach) {
+//         row.classList.remove('hidden');
+//       } else {
+//         row.classList.add('hidden');
+//       }
+//     });
+//   });
+//   tbody.querySelectorAll('tr').forEach(row => {
+//     row.classList.remove('hidden');
+//   });
+// });
 
 
 
@@ -77,5 +75,36 @@ fetch('distance.json')
 //     document.querySelectorAll('.table_sort thead').forEach(tableTH => tableTH.addEventListener('click', () => getSort(event)));
 
 // });
+
+// №2 Sort ---
+// var coachSelect = document.getElementById('coach-select');
+//         var tableBody = document.getElementById('table-body');
+//         var filterButton = document.getElementById('filter-button');
+
+//         function updateTable(selectedCoach) {
+//             tableBody.innerHTML = ''; 
+
+//             participants.forEach(function(participant) {
+//                 if (selectedCoach === 'all' || participant.coach === selectedCoach) {
+//                     var row = document.createElement('tr');
+//                     row.innerHTML = `
+//                         <td>${participant.id}</td>
+//                         <td>${participant.name}</td>
+//                         <td>${participant.date}</td>
+//                         <td>${participant.grade}</td>
+//                         <td>${participant.place}</td>
+//                         <td>${participant.time}</td>
+//                         <td>${participant.coach}</td>
+//                     `;
+//                     tableBody.appendChild(row);
+//                 }
+//             });
+//         }
+
+//         filterButton.addEventListener('click', function() {
+//             var selectedCoach = coachSelect.value;
+//             updateTable(selectedCoach);
+//         });
+//         updateTable('all');
 
 // Slider
