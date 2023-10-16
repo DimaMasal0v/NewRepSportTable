@@ -53,18 +53,66 @@ color: white;
   background-color: gold;
 }
 
+/* Body */
+
+body{
+  max-width: 1440px;
+  position: relative;
+}
+
+@media (max-width: 1000px) {
+  body {
+      max-width: 748px;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+      max-width: 375px;
+  }
+}
+
+.container-grid{
+  max-width: 1216px;
+  display: grid;
+  grid-template-columns:repeat(12,72px);
+  gap:32px;/*отступ между колонками*/
+
+  margin: 0 auto;/*Выравнивае по центру*/
+}
+
+@media (max-width: 1000px) {
+  .container-grid {
+      display: grid;
+      max-width: 668px;
+      grid-template-columns:repeat(8,72px);
+      gap:18px;/*отступ между колонками*/
+      margin: 0 auto;/*Выравнивае по центру*/
+  }
+}
+
+@media (max-width: 700px) {
+  .container-grid {
+      display: grid;
+      max-width: 335px;
+      grid-template-columns:repeat(4,72px);
+      gap:18px;/*отступ между колонками*/
+      margin: 0 auto;/*Выравнивае по центру*/
+  }
+}
+
 /* Header */
 
 .header {
   background-color: #999999;
   color: #fff;
-  width: 100vw;
+  /* width: 100vw;
   height: 110px;
   margin-bottom: 50px;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 999; */
 }
 
 /* Header IMG */
@@ -80,7 +128,7 @@ color: white;
 /* Header Text */
 .header-nav-menu {
   top: 35px;
-  left: 1200px;
+  left: 1000px;
   width: 373px;
   display: flex;
   position: absolute;
@@ -202,7 +250,6 @@ p a {
 }
 .dekstop-container-right {
   width: 50%;
-
   display: flex;
   position: relative;
   flex-shrink: 0;
@@ -213,7 +260,6 @@ p a {
 .dekstop-container {
   position: absolute;
   width: 100%;
-  left: 112px;
   top: -120px;
   line-height: 2;
 
@@ -258,7 +304,6 @@ margin-top: 3700px;
   line-height: 24px;
 }
 .dekstop-right-section {
-  width: 50%;
   position: relative;
   align-items: right;
   flex-shrink: 0;
