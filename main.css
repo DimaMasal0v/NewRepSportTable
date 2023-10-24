@@ -228,7 +228,7 @@ p a {
 /* Footer */
 .footer {
   position: relative;
-  top: 300px;
+  top: 50px;
 }
 .container-footer {
   content: "";
@@ -237,7 +237,7 @@ p a {
   width: 100%;
   height: 2px;
   background: #999999;
-  margin-top: 180px;
+  margin-top: 100px;
 }
 
 .dekstop-container-left {
@@ -303,12 +303,12 @@ margin-top: 3700px;
   text-align: left;
   line-height: 24px;
 }
-.dekstop-right-section {
+/* .dekstop-right-section {
   position: relative;
   align-items: right;
   flex-shrink: 0;
   border-color: transparent;
-}
+} */
 .dekstop-eyebrow {
   display: flex;
   opacity: 0.7;
@@ -604,8 +604,8 @@ a:hover {
 
 /* Section Container Two */
 .container_two {
-  max-width: 1500px;
-  margin-left: 100px;
+  max-width: 1440px;
+  margin-left: 60px;
 }
 
 /* .container_two-text::before{
@@ -655,21 +655,15 @@ a:hover {
 /* CT BLOCK */
 .one {
   border: #000 1px solid;
-  width: 384px;
   height: 416px;
-  margin-right: 50px;
 }
 .two {
   border: #000 1px solid;
-  width: 384px;
   height: 416px;
-  margin-right: 50px;
 }
 .three {
   border: #000 1px solid;
-  width: 384px;
   height: 416px;
-  margin-right: 50px;
 }
 
 .button-contact {

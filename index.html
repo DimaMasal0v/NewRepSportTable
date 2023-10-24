@@ -22,7 +22,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="">
-    <header class="header bg-gray-400 text-white xl:w-full w-full h-24 absolute">
+    <!-- container-grid - grid grid-cols-12 lg:grid-cols-8 md:grid-cols-4 gap-4 lg:gap-32 md:gap-18 max-w-1216 lg:max-w-668 md:max-w-335 mx-auto -->
+    <header class="header bg-gray-400 text-white w-full h-24 absolute">
       <div class="container">
         <img
           alt="IMAGE144"
@@ -416,9 +417,9 @@
     <!-- 2xl:mt-16(большие экраны) sm:mt-8(маленькие экраны) -->
     <section class="">
       <div
-        class="container bg-gray-400 w-full min-w-0 max-w-full sm:h-56 h-72 table-main relative bottom-72 mb-80 grid sm:grid-rows-1 grid-rows-4 sm:max-h-full max-h-96"
+        class="container bg-gray-400 sm:h-56 h-72 table-main relative bottom-72 mb-80 grid sm:grid-rows-1 grid-rows-4"
       >
-        <div class="select_container xl:h-10 sm:h-96">
+        <div class="container-grid">
           <div>
             <p
               class="select-text text-white flex bottom-10 top-4 left-10 absolute sm:pl-0 pl-5"
@@ -494,9 +495,9 @@
     <div class="relative bottom-96">
       <div class="container_two-line static top-96"></div>
 
-      <section class="container_two flex justify-center mt-20 static">
+      <section class="flex justify-center mt-20 static">
         <div
-          class="container sm:ml-0 ml-36 grid sm:grid-cols-2 sm:grid-rows-none grid-cols-none grid-rows-1 sm:mr-0 mr-72 xl:right-32 sm:left-60 xl:w-full w-full sm:px-0 px-1"
+          class="container-grid sm:grid-cols-2 sm:grid-rows-none grid-cols-none grid-rows-1 sm:px-0 px-1"
         >
           <!--container sm:flex ml-36 justify-between sm:mr-0 mr-72 xl:right-32 sm:left-60 xl:w-full w-full sm:px-0 px-1-->
           <div class="container_two-text xl:w-full w-64">
@@ -518,15 +519,15 @@
               ex.</span
             >
           </div>
-          <div class="container_two-img flex justify-between sm:mr-32">
+          <div class="container-grid flex justify-between sm:mr-32">
             <!--sm:flex-row flex-col -->
             <img
-              class="sm:mb-10 sm:w-64 sm:h-96 w-32 h-60"
+              class="sm:mb-10 sm:w-64 w-32"
               src="./img/Image.svg"
               alt=""
             />
             <img
-              class="sm:ma-5 ml-4 mt-15 sm:w-64 sm:h-96 w-32 h-60"
+              class="mt-15 sm:w-64 w-32"
               src="./img/Image (1).svg"
               alt=""
             />
@@ -567,9 +568,9 @@
     >
       <!--xl:flex-no-wrap flex-col-->
       <div
-        class="container grid sm:grid-cols-3 grid-cols-1 sm:grid-rows-1 grid-rows-3 sm:w-full w-10 sm:px-0 px-5"
+        class="container-grid sm:grid-cols-3 grid-cols-1 sm:grid-rows-1 grid-rows-3"
       >
-        <div class="one mb-5 sm:w-80 w-64">
+        <div class="one mb-5">
           <img class="pl-5 pt-5" src="./svg/Service Icon.svg" alt="" />
           <h2
             class="mt-10 ml-6 mr-6 sm:text-4xl text-2xl sm:font-normal font-medium"
@@ -581,7 +582,7 @@
             molestie volutpat ipsum, ultricies.
           </p>
         </div>
-        <div class="two mb-5 sm:w-80 w-64">
+        <div class="two mb-5">
           <img class="pl-5 pt-5" src="./svg/Service Icon (1).svg" alt="" />
           <h2
             class="mt-10 ml-6 mr-6 sm:text-4xl text-2xl sm:font-normal font-medium"
@@ -593,7 +594,7 @@
             molestie volutpat ipsum, ultricies.
           </p>
         </div>
-        <div class="three mb-5 sm:w-80 w-64">
+        <div class="three mb-5">
           <img class="pl-5 pt-5" src="./svg/Service Icon (2).svg" alt="" />
           <h2
             class="mt-10 ml-6 mr-6 sm:text-4xl text-2xl sm:font-normal font-medium"
@@ -611,9 +612,9 @@
     <!-- CF BLOCK -->
     <section class="container_two flex justify-center mt-10">
       <div
-        class="container relative bottom-48 sm:mr-20 mr-36 grid sm:grid-cols-2 grid-cols-none sm:grid-rows-1 grid-rows-none"
+        class="container-grid relative bottom-48 sm:mr-20 mr-20 sm:grid-cols-2 grid-cols-none sm:grid-rows-1 grid-rows-none"
       >
-        <div class="container_two-text mr-24 sm:mb-0 mb-28">
+        <div class="container_two-text sm:mb-0 mb-28">
           <h5
             class="uppercase text-yellow-500 sm:text-sm font-bold xl:text-2xl sm:w-60"
           >
@@ -625,7 +626,7 @@
             Some of our crafts made with love
           </h6>
           <img
-            class="sm:w-full sm:h-full w-64 h-60 sm:mx-0 mx-3"
+            class="sm:h-full h-60"
             src="./img/Image (3).svg"
             alt=""
           />
@@ -643,9 +644,9 @@
             <a href="#">CONTACT US</a>
           </button>
         </div>
-        <div class="sm:w-96 w-72">
+        <div class="sm:w-96 w-full">
           <img
-            class="sm:w-96 sm:h-80 w-64 h-60 sm:mx-0 mx-3"
+            class="sm:h-80 h-60"
             src="./img/Image (2).svg"
             alt=""
           />
@@ -658,7 +659,7 @@
             Faucibus fringilla dui amet faucibus nam.</span
           >
           <img
-            class="sm:w-96 sm:h-80 w-64 h-60 sm:mx-0 mx-3"
+            class="sm:h-80 h-60"
             src="./img/Image (4).svg"
             alt=""
           />
@@ -685,9 +686,9 @@
 
     <!-- FOOTER -->
     <footer class="footer relative p-0">
-      <div class="dekstop-container flex bottom-10 justify-between">
+      <div class="container-grid flex justify-between">
         <div class="container flex flex-col sm:px-5 px-1">
-          <div class="dekstop-container-left sm:text-left sm:mt-60">
+          <div class="dekstop-container-left sm:text-left">
             <h2 class="footer-contaiber-text">
               Launch your rowing experience with us!
             </h2>
@@ -696,7 +697,7 @@
             >
           </div>
           <div
-            class="dekstop-container-right w-15 flex-col text-left xl:min-w-full sm:text-right sm:mb-28">
+            class="dekstop-container-right flex-col text-left xl:min-w-full sm:text-right">
             <h3 class="text-xl">Russia,Saint-Petersburg</h3>
             <span>Email:</span>
             <p><a href="m3sades@yandex.ru">m3sades@yandex.ru</a></p>
@@ -706,16 +707,16 @@
         </div>
       </div>
 
-      <div class="container-footer flex xl:flex-col sm:max-w-full">
+      <div class="container-footer flex xl:flex-col">
         <div
           class="dekstop-container1 grid sm:grid-rows-1 sm:grid-cols-2 grid-rows-1"
         >
           <span
-            class="dekstop-text BodymdLight sm:text-left text-center sm:w-full sm:max-w-full max-w-xs w-44 sm:inline-block block"
+            class="dekstop-text BodymdLight sm:text-left text-center"
           >
             <span>© 2023 Row-Compilition 2000m - 4000m</span>
           </span>
-          <div class="dekstop-right-section sm:flex sm:left-32 left-72 hidden">
+          <div class="dekstop-right-section sm:flex hidden">
             <div class="dekstop-eyebrow">
               <span class="dekstop-text02 BodysmtrackingWidestSemiBold">
                 <span>CONNECT</span>
