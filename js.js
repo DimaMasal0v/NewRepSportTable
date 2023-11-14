@@ -9,27 +9,28 @@ coachList.forEach(function(coach) {
   coachSelect.appendChild(option);
 });
 
-// fetch('distance.json')
-// .then(response => response.json())
-// .then(data => {
-//   var table = document.getElementById('table-sort');
-//   var tbody = table.querySelector('tbody');
-//   data.forEach(row => {
-//     var tr = document.createElement('tr');
-//     tr.innerHTML = `
-//       <td>${row.number}</td>
-//       <td>${row.Fio}</td>
-//       <td>${row.Date}</td>
-//       <td>${row.Discharge}</td>
-//       <td>${row.Place}</td>
-//       <td>${row.Time}</td>
-//       <td>${row.Coach}</td>
-//     `;
-//     if (row.Place === 1) {
-//       tr.classList.add('gold');
-//     }
-//     tbody.appendChild(tr);
-//   });
+fetch('distance.json')
+.then(response => response.json())
+.then(data => {
+  var table = document.getElementById('table-sort');
+  var tbody = table.querySelector('tbody');
+  data.forEach(row => {
+    var tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${row.number}</td>
+      <td>${row.Fio}</td>
+      <td>${row.Date}</td>
+      <td>${row.Discharge}</td>
+      <td>${row.Place}</td>
+      <td>${row.Time}</td>
+      <td>${row.Coach}</td>
+    `;
+    if (row.Place === 1) {
+      tr.classList.add('gold');
+    }
+    tbody.appendChild(tr);
+    });
+  });
 
 //   coachSelect.addEventListener('change', function() {
 //     var selectedCoach = coachSelect.value;

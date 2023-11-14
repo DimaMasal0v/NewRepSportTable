@@ -32,10 +32,6 @@ body {
   }
 }
 
-.table-main {
-  margin-top: 130px;
-  margin-bottom: 350px;
-}
 
 a {
   color: black;
@@ -230,7 +226,7 @@ p a {
   position: relative;
   top: 50px;
 }
-.container-footer {
+/* .container-footer {
   content: "";
   position: absolute;
   left: 0;
@@ -238,7 +234,7 @@ p a {
   height: 2px;
   background: #999999;
   margin-top: 100px;
-}
+} */
 
 .dekstop-container-left {
   width: 50%;
@@ -557,7 +553,6 @@ a:hover {
   position: absolute;
   font-size: 50px;
   transform: rotate(-90deg);
-  bottom: 120px;
 }
 
 /* Slider */
@@ -620,6 +615,16 @@ a:hover {
     top: 10px;
   } */
 
+/* .container_two-line {
+  content: "";
+  position: relative;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background: #999999;
+  bottom: 300px;
+} */
+
 .container_two-line {
   content: "";
   position: relative;
@@ -627,7 +632,6 @@ a:hover {
   width: 100%;
   left: 0;
   background: #999999;
-  bottom: 100px;
 }
 
 .container_two-img {
@@ -635,13 +639,13 @@ a:hover {
   max-height: 592px;
 }
 
-.container_two-text {
+/* .container_two-text {
   width: 592px;
   height: 428px;
-}
+} */
 
 /* Number Line */
-.number_block::before {
+/* .number_block::before {
   content: "";
   position: absolute;
   width: 1216px;
@@ -650,7 +654,7 @@ a:hover {
   margin-top: 200px;
   display: flex;
   justify-content: space-between;
-}
+} */
 
 /* CT BLOCK */
 .one {

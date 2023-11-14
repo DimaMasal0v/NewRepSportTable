@@ -21,41 +21,42 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="">
-    <!-- container-grid - grid grid-cols-12 lg:grid-cols-8 md:grid-cols-4 gap-4 lg:gap-32 md:gap-18 max-w-1216 lg:max-w-668 md:max-w-335 mx-auto -->
-    <header class="header bg-gray-400 text-white w-full h-24 absolute">
-      <div class="container">
+  <body>
+    <!-- Header -->
+    <header class="bg-gray-400 text-white relative">
+      <div class="container-grid flex justify-between items-center">
         <img
           alt="IMAGE144"
           src="img/image144-hz6s-200h.png"
-          class="header-image1"
+          class=""
         />
-        <div class="header-nav-menu">
-          <div class="container sm:grid sm:grid-cols-3 w-96">
-            <div class="header-menu-item">
-              <span class="header-text text-white"><span>Главная</span></span>
+        <div class="sm:flex justify-between gap-5">
+            <div class="">
+              <span class=" text-white sm:flex hidden"><span>Главная</span></span>
             </div>
-            <div class="header-menu-item1">
-              <span class="header-text text-white"
-                ><span>Результаты</span></span
-              >
-              <div class="header-menu-content text-black">
-                <a href="index.html"><span>Дистанция: 2000м </span></a>
-                <a href="distance.html"><span>Дистанция: 4000м</span></a>
-              </div>
+            <div class="">
+              <span class=" text-white sm:flex hidden">
+                Результаты
+              </span>
             </div>
-            <div class="header-menu-item2">
-              <span class="header-text text-white"><span>О нас</span></span>
-            </div>
+            <div class="">
+              <span class=" text-white sm:flex hidden"><span>О нас</span></span>
           </div>
+          <svg xmlns="https://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 30 25" fill="none">
+            <rect width="30" height="1" fill="#786152" />
+            <rect y="6" width="30" height="1" fill="#786152" />
+            <rect y="12" width="30" height="1" fill="#786152" />
+            <rect y="18" width="30" height="1" fill="#786152" />
+            <rect y="24" width="30" height="1" fill="#786152" />
+        </svg>
         </div>
       </div>
     </header>
-    <section class="grid grid-cols-1 px-5">
-      <div class="table-main flex justify-center relative">
+
+    <section class="relative">
+      <div class="flex justify-center">
         <div class="table">
           <!-- 2xl:text-xl -->
-          <div class="container">
             <h1 class="font-bold uppercase text-3xl text-center mb-1 min-w-min">
               Результаты соревнований
             </h1>
@@ -70,10 +71,7 @@
               ></select>
               <button
                 class="p-5 bg-gray-300 mr-5 sm:flex hidden"
-                id="filter-button"
-              >
-                Сортировка
-              </button>
+                id="filter-button">Сортировка</button>
             </div>
             <!-- Table 1 -->
             <!-- <div class="border border-solid border-black p-10 rounded-sm"> -->
@@ -97,90 +95,9 @@
             <!-- </div> -->
 
             <!-- Table 2 -->
-            <table
-              class="sm:w-full w-80 flex flex-row flex-no-wrap sm:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5 text-center"
-            >
+            <table class="sm:w-full w-80 flex flex-row flex-no-wrap sm:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5 text-center" id="table-sort">
               <thead class="text-white">
-                <tr
-                  class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-5 sm:mb-0"
-                >
-                  <th class="p-3 text-left">№</th>
-                  <th class="p-3 text-left">ФИО</th>
-                  <th class="p-3 text-left">Дата</th>
-                  <th class="p-3 text-left">Разряд</th>
-                  <th class="p-3 text-left">Место</th>
-                  <th class="p-3 text-left">Время</th>
-                  <th class="p-3 text-left">Тренер</th>
-                </tr>
-                <tr
-                  class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
-                >
-                  <th class="p-3 text-left">№</th>
-                  <th class="p-3 text-left">ФИО</th>
-                  <th class="p-3 text-left">Дата</th>
-                  <th class="p-3 text-left">Разряд</th>
-                  <th class="p-3 text-left">Место</th>
-                  <th class="p-3 text-left">Время</th>
-                  <th class="p-3 text-left">Тренер</th>
-                </tr>
-                <tr
-                  class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
-                >
-                  <th class="p-3 text-left">№</th>
-                  <th class="p-3 text-left">ФИО</th>
-                  <th class="p-3 text-left">Дата</th>
-                  <th class="p-3 text-left">Разряд</th>
-                  <th class="p-3 text-left">Место</th>
-                  <th class="p-3 text-left">Время</th>
-                  <th class="p-3 text-left">Тренер</th>
-                </tr>
-                <tr
-                  class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
-                >
-                  <th class="p-3 text-left">№</th>
-                  <th class="p-3 text-left">ФИО</th>
-                  <th class="p-3 text-left">Дата</th>
-                  <th class="p-3 text-left">Разряд</th>
-                  <th class="p-3 text-left">Место</th>
-                  <th class="p-3 text-left">Время</th>
-                  <th class="p-3 text-left">Тренер</th>
-                </tr>
-                <tr
-                  class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
-                >
-                  <th class="p-3 text-left">№</th>
-                  <th class="p-3 text-left">ФИО</th>
-                  <th class="p-3 text-left">Дата</th>
-                  <th class="p-3 text-left">Разряд</th>
-                  <th class="p-3 text-left">Место</th>
-                  <th class="p-3 text-left">Время</th>
-                  <th class="p-3 text-left">Тренер</th>
-                </tr>
-                <tr
-                  class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
-                >
-                  <th class="p-3 text-left">№</th>
-                  <th class="p-3 text-left">ФИО</th>
-                  <th class="p-3 text-left">Дата</th>
-                  <th class="p-3 text-left">Разряд</th>
-                  <th class="p-3 text-left">Место</th>
-                  <th class="p-3 text-left">Время</th>
-                  <th class="p-3 text-left">Тренер</th>
-                </tr>
-                <tr
-                  class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
-                >
-                  <th class="p-3 text-left">№</th>
-                  <th class="p-3 text-left">ФИО</th>
-                  <th class="p-3 text-left">Дата</th>
-                  <th class="p-3 text-left">Разряд</th>
-                  <th class="p-3 text-left">Место</th>
-                  <th class="p-3 text-left">Время</th>
-                  <th class="p-3 text-left">Тренер</th>
-                </tr>
-                <tr
-                  class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
-                >
+                <tr class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-5 sm:mb-0">
                   <th class="p-3 text-left">№</th>
                   <th class="p-3 text-left">ФИО</th>
                   <th class="p-3 text-left">Дата</th>
@@ -190,505 +107,272 @@
                   <th class="p-3 text-left">Тренер</th>
                 </tr>
               </thead>
-              <tbody class="flex-1 sm:flex-none text-center" id="table-body">
-                <tr
-                  class="flex flex-col flex-no wrap sm:table-row mb-6 sm:mb-0"
-                >
+              <tbody class="flex-1 sm:flex-none text-center">
+                <tr class="flex flex-col flex-no wrap sm:table-row mb-6 sm:mb-0">
                   <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    1
-                  </td>
-                  <td
-                    class="border-grey-light border hover:bg-gray-100 p-3 truncate"
-                  >
-                    Масалов Дмитрий Алексеевич
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    1 мая 2001 года
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    1 Взрослый
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    1
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    6:00:01
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    Мерк
-                  </td>
-                </tr>
-                <tr
-                  class="flex flex-col flex-no wrap sm:table-row mb-3 sm:mb-0"
-                >
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    2
-                  </td>
-                  <td
-                    class="border-grey-light border hover:bg-gray-100 p-3 truncate"
-                  >
-                    Иванов Генадий Викторович
-                  </td>
-                  <td
-                    class="border-grey-light border hover:bg-gray-100 p-3 h-12"
-                  ></td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    2 Взрослый
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    3
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    6:05:10
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    Герасимов
-                  </td>
-                </tr>
-                <tr
-                  class="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0"
-                >
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    3
-                  </td>
-                  <td
-                    class="border-grey-light border hover:bg-gray-100 p-3 truncate"
-                  >
-                    Дмитриев Степан Александрович
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    11 апреля 2002 года
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    2 Взрослый
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    4
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    6:10:13
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    Иванов
-                  </td>
-                </tr>
-                <tr
-                  class="flex flex-col flex-no wrap sm:table-row mb-3 sm:mb-0"
-                >
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    4
-                  </td>
-                  <td
-                    class="border-grey-light border hover:bg-gray-100 p-3 truncate"
-                  >
-                    Степанов Никита Олегович
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    5 август 2002 года
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    3 Взрослый
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    4
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    6:08:22
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    Мерк
-                  </td>
-                </tr>
-                <tr
-                  class="flex flex-col flex-no wrap sm:table-row mb-3 sm:mb-0"
-                >
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    5
-                  </td>
-                  <td
-                    class="border-grey-light border hover:bg-gray-100 p-3 truncate"
-                  >
-                    Алексеев Кирилл Никитич
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    1 февряля 2001 года
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    1 Взрослый
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    7
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    6:15:01
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    Сема
-                  </td>
-                </tr>
-                <tr
-                  class="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0"
-                >
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    6
-                  </td>
-                  <td
-                    class="border-grey-light border hover:bg-gray-100 p-3 truncate"
-                  >
-                    Сергеев Вячеслав Андреевич
-                  </td>
-                  <td
-                    class="border-grey-light border hover:bg-gray-100 p-3 h-12"
-                  ></td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    3 Взрослый
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    8
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    6:18:01
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    Герасимов
-                  </td>
-                </tr>
-                <tr
-                  class="flex flex-col flex-no wrap sm:table-row mb-3 sm:mb-0"
-                >
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    7
-                  </td>
-                  <td
-                    class="border-grey-light border hover:bg-gray-100 p-3 truncate"
-                  >
-                    Шулепов Алексей Дмитриевич
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    12 января 2003 года
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    3 Взрослый
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    6
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    6:12:01
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    Андреев
-                  </td>
-                </tr>
-                <tr
-                  class="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0"
-                >
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    8
-                  </td>
-                  <td
-                    class="border-grey-light border hover:bg-gray-100 p-3 truncate"
-                  >
-                    Александров Олег Николаевич
-                  </td>
-                  <td
-                    class="border-grey-light border hover:bg-gray-100 p-3 h-12"
-                  ></td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    1 Взрослый
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    2
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    6:03:51
-                  </td>
-                  <td class="border-grey-light border hover:bg-gray-100 p-3">
-                    Андреев
+
                   </td>
                 </tr>
               </tbody>
             </table>
-          </div>
         </div>
       </div>
       <div></div>
     </section>
     <!-- 2xl:mt-16(большие экраны) sm:mt-8(маленькие экраны) -->
-    <section class="">
-      <div
-        class="container bg-gray-400 sm:h-56 h-72 table-main relative bottom-72 mb-80 grid sm:grid-rows-1 grid-rows-4"
-      >
-        <div class="container-grid">
-          <div>
-            <p
-              class="select-text text-white flex bottom-10 top-4 left-10 absolute sm:pl-0 pl-5"
-            >
-              Награды
-            </p>
-          </div>
-          <div
-            class="svg flex justify-center absolute left-36 2xl:mt-16 sm:mt-8 xl:flex-no-wrap flex-col xl:grid grid-flow-col"
-          >
-            <div
-              class="select_container-svg-1 sm:mr-8 sm:ml-0 -ml-20 flex justify-start sm:mt-0 mt-3"
-            >
-              <img
-                class="sm:w-20 sm:h-20 w-15 h-15 mr-3"
-                src="./svg/german-design-award.svg"
-                alt=""
-              />
-              <span
-                class="sm:text-sm text-xs font-normal text-white mt-3 sm:w-52 w-40"
-                >German Design Awardbr <br />
-                2021</span
-              >
-            </div>
-            <div
-              class="select_container-svg-2 sm:mr-8 sm:ml-0 -ml-20 flex justify-start"
-            >
-              <img
-                class="sm:w-20 sm:h-20 w-15 h-15 mr-3"
-                src="./svg/a-design-award.svg"
-                alt=""
-              />
-              <span
-                class="sm:text-sm text-xs font-normal text-white mt-5 sm:w-52 w-40"
-                >Gold A’ Design Award <br />
-                2021</span
-              >
-            </div>
-            <div
-              class="select_container-svg-3 sm:mr-8 sm:ml-0 -ml-20 flex justify-start"
-            >
-              <img
-                class="sm:w-20 sm:h-20 w-15 h-15 mr-3"
-                src="./svg/if-design-award.svg"
-                alt=""
-              />
-              <span
-                class="sm:text-sm text-xs font-normal text-white mt-5 sm:w-52 w-40"
-                >IF Design Award <br />
-                2020</span
-              >
-            </div>
-            <div
-              class="select_container-svg-4 sm:mr-8 sm:ml-0 -ml-20 flex justify-start"
-            >
-              <img
-                class="sm:w-20 sm:h-20 w-15 h-15 mr-3"
-                src="./svg/good-design-award.svg"
-                alt=""
-              />
-              <span
-                class="sm:text-sm text-xs font-normal text-white mt-5 sm:w-52 w-40"
-                >Good Design Award <br />
-                2019</span
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Line -->
-    <div class="relative bottom-96">
-      <div class="container_two-line static top-96"></div>
-
-      <section class="flex justify-center mt-20 static">
+    <main class="relative">
+      <section class="relative">
         <div
-          class="container-grid sm:grid-cols-2 sm:grid-rows-none grid-cols-none grid-rows-1 sm:px-0 px-1"
+          class=" bg-gray-400 sm:h-56 h-72 mb-10 grid sm:grid-cols-12 grid-cols-4 gap-4 sm:gap-8"
         >
-          <!--container sm:flex ml-36 justify-between sm:mr-0 mr-72 xl:right-32 sm:left-60 xl:w-full w-full sm:px-0 px-1-->
-          <div class="container_two-text xl:w-full w-64">
-            <h5
-              class="uppercase text-yellow-500 sm:text-sm font-bold xl:text-2xl sm:w-36"
+            <div>
+              <p class="select-text text-white flex bottom-10 top-4 left-10 absolute sm:pl-0 pl-5">
+                Награды
+              </p>
+            </div>
+            <div
+              class="svg flex justify-center absolute left-36 2xl:mt-16 sm:mt-8 xl:flex-no-wrap flex-col xl:grid grid-flow-col"
             >
-              about us
-            </h5>
-            <h6
-              class="sm:text-6xl italic sm:normal font-normal text-3xl xl:w-full sm:w-36"
-            >
-              We help to bring your dream home to reality
-            </h6>
-            <span class="xl:w-full sm:w-36"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-              Optio ipsam atque cupiditate temporibus corporis vitae, laborum
-              laboriosam laudantium iure eius nisi, doloremque labore
-              necessitatibus asperiores ducimus deserunt numquam repellat
-              ex.</span
-            >
-          </div>
-          <div class="container-grid flex justify-between sm:mr-32">
-            <!--sm:flex-row flex-col -->
-            <img
-              class="sm:mb-10 sm:w-64 w-32"
-              src="./img/Image.svg"
-              alt=""
-            />
-            <img
-              class="mt-15 sm:w-64 w-32"
-              src="./img/Image (1).svg"
-              alt=""
-            />
+              <div
+                class="select_container-svg-1 sm:mr-8 sm:ml-0 -ml-20 flex justify-start sm:mt-0 mt-3"
+              >
+                <img
+                  class="sm:w-20 sm:h-20 w-15 h-15 mr-3"
+                  src="./svg/german-design-award.svg"
+                  alt=""
+                />
+                <span
+                  class="sm:text-sm text-xs font-normal text-white mt-3 sm:w-52 w-40"
+                  >German Design Awardbr <br />
+                  2021</span
+                >
+              </div>
+              <div
+                class="select_container-svg-2 sm:mr-8 sm:ml-0 -ml-20 flex justify-start"
+              >
+                <img
+                  class="sm:w-20 sm:h-20 w-15 h-15 mr-3"
+                  src="./svg/a-design-award.svg"
+                  alt=""
+                />
+                <span
+                  class="sm:text-sm text-xs font-normal text-white mt-5 sm:w-52 w-40"
+                  >Gold A’ Design Award <br />
+                  2021</span
+                >
+              </div>
+              <div
+                class="select_container-svg-3 sm:mr-8 sm:ml-0 -ml-20 flex justify-start"
+              >
+                <img
+                  class="sm:w-20 sm:h-20 w-15 h-15 mr-3"
+                  src="./svg/if-design-award.svg"
+                  alt=""
+                />
+                <span
+                  class="sm:text-sm text-xs font-normal text-white mt-5 sm:w-52 w-40"
+                  >IF Design Award <br />
+                  2020</span
+                >
+              </div>
+              <div
+                class="select_container-svg-4 sm:mr-8 sm:ml-0 -ml-20 flex justify-start"
+              >
+                <img
+                  class="sm:w-20 sm:h-20 w-15 h-15 mr-3"
+                  src="./svg/good-design-award.svg"
+                  alt=""
+                />
+                <span
+                  class="sm:text-sm text-xs font-normal text-white mt-5 sm:w-52 w-40"
+                  >Good Design Award <br />
+                  2019</span>
+            </div>
           </div>
         </div>
       </section>
-      <!-- Number -->
-      <div class="number_block flex justify-center before:w-full">
-        <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-3">100%</span
-        ><span class="text-sm pr-16 pt-2 sm:flex hidden"
-          >SATISFITATION <br />
-          CLIENTS</span
-        >
-        <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-3">250</span
-        ><span class="text-sm pr-16 pt-2 sm:flex hidden"
-          >EMPLOYEES ON <br />
-          WORLDWIDE</span
-        >
-        <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-3">3469</span
-        ><span class="text-sm pr-16 pt-2 sm:flex hidden"
-          >PROJECTS COMPLETED <br />
-          ON 60 COUNTRIES</span
-        >
-      </div>
-    </div>
 
-    <!-- CT BLOCK -->
-    <!-- <section class="container_three flex justify-center mt-64 ml-28">
-  <div class="container relative flex top-55">
-    <div class="container_two-text">
-      <h5 class="uppercase text-yellow-500 text-sm font-bold ml-16">OUR SERVICES</h5>
-      <h6 class="text-6xl font-normal">We provide the best solutions for your dream home</h6>
-    </div>
-</section> -->
+      <!-- Line -->
+      <!-- <div class="relative">
+        <div class="container_two-line"></div>
+      </div> -->
+        <section class="relative sm:mb-0 mb-10">
+          <div
+            class="container-grid sm:grid-cols-2 sm:grid-rows-none grid-cols-none grid-rows-1 sm:px-0 px-1">
+            <!--container sm:flex ml-36 justify-between sm:mr-0 mr-72 xl:right-32 sm:left-60 xl:w-full w-full sm:px-0 px-1-->
+            <div class="container_two-text">
+              <h5
+                class="uppercase text-yellow-500 sm:text-sm font-bold xl:text-2xl"
+              >
+                about us
+              </h5>
+              <h6
+                class="sm:text-6xl italic sm:normal font-normal text-3xl"
+              >
+                We help to bring your dream home to reality
+              </h6>
+              <span class="xl:w-full sm:w-36"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+                Optio ipsam atque cupiditate temporibus corporis vitae, laborum
+                laboriosam laudantium iure eius nisi, doloremque labore
+                necessitatibus asperiores ducimus deserunt numquam repellat
+                ex.</span
+              >
+            </div>
+            <div class="flex justify-between sm:mr-32">
+              <!--sm:flex-row flex-col -->
+              <img
+                class="sm:mb-10 sm:w-64 w-32 sm:pr-5"
+                src="./img/Image.svg"
+                alt=""
+              />
+              <img
+                class="mt-15 sm:w-64 w-32"
+                src="./img/Image (1).svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+        <!-- Number -->
+        <div class="flex justify-center sm:mb-5">
+            <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-3">100%</span
+            ><span class="text-sm pr-16 pt-2 sm:flex hidden"
+              >SATISFITATION <br />
+              CLIENTS</span
+            >
+            <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-3">250</span
+            ><span class="text-sm pr-16 pt-2 sm:flex hidden"
+              >EMPLOYEES ON <br />
+              WORLDWIDE</span
+            >
+            <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-3">3469</span
+            ><span class="text-sm pr-16 pt-2 sm:flex hidden"
+              >PROJECTS COMPLETED <br />
+              ON 60 COUNTRIES</span>
+        </div>
 
-    <div
-      class="flex justify-center pb-5 xl:grid grid-flow-col min-w-0 xl:flex-no-wrap sm:ml-10 flex-col relative bottom-52"
-    >
-      <!--xl:flex-no-wrap flex-col-->
-      <div
-        class="container-grid sm:grid-cols-3 grid-cols-1 sm:grid-rows-1 grid-rows-3"
-      >
-        <div class="one mb-5">
-          <img class="pl-5 pt-5" src="./svg/Service Icon.svg" alt="" />
-          <h2
-            class="mt-10 ml-6 mr-6 sm:text-4xl text-2xl sm:font-normal font-medium"
-          >
-            Architectural & Interior design
-          </h2>
-          <p class="text-lg font-normal ml-6 mr-6">
-            Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc,
-            molestie volutpat ipsum, ultricies.
-          </p>
-        </div>
-        <div class="two mb-5">
-          <img class="pl-5 pt-5" src="./svg/Service Icon (1).svg" alt="" />
-          <h2
-            class="mt-10 ml-6 mr-6 sm:text-4xl text-2xl sm:font-normal font-medium"
-          >
-            Building Renovation
-          </h2>
-          <p class="text-lg font-normal ml-6 mr-6">
-            Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc,
-            molestie volutpat ipsum, ultricies.
-          </p>
-        </div>
-        <div class="three mb-5">
-          <img class="pl-5 pt-5" src="./svg/Service Icon (2).svg" alt="" />
-          <h2
-            class="mt-10 ml-6 mr-6 sm:text-4xl text-2xl sm:font-normal font-medium"
-          >
-            Construciton Management
-          </h2>
-          <p class="text-lg font-normal ml-6 mr-6">
-            Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc,
-            molestie volutpat ipsum, ultricies.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- CF BLOCK -->
-    <section class="container_two flex justify-center mt-10">
-      <div
-        class="container-grid relative bottom-48 sm:mr-20 mr-20 sm:grid-cols-2 grid-cols-none sm:grid-rows-1 grid-rows-none"
-      >
-        <div class="container_two-text sm:mb-0 mb-28">
-          <h5
-            class="uppercase text-yellow-500 sm:text-sm font-bold xl:text-2xl sm:w-60"
-          >
-            RECENT WORKS
-          </h5>
-          <h6
-            class="sm:text-6xl sm:normal italic font-normal text-3xl xl:w-full w-60"
-          >
-            Some of our crafts made with love
-          </h6>
-          <img
-            class="sm:h-full h-60"
-            src="./img/Image (3).svg"
-            alt=""
-          />
-          <h4 class="sm:text-4xl sm:font-normal text-2xl italic mt-6 sm:w-60">
-            Villa Furnishing & Interior
-          </h4>
-          <span class="text-lg font-light text-neutral-400 xl:w-full sm:w-36"
-            >Lorem ipsum dolor sit amet. <br />
-            Faucibus fringilla dui amet faucibus. <br />
-            Erat id laoreet posuere etiam morbi.</span
-          ><br />
-          <button
-            class="button-contact xl:mt-24 sm:mt-8 text-sm sm:inline-block hidden"
-          >
-            <a href="#">CONTACT US</a>
-          </button>
-        </div>
-        <div class="sm:w-96 w-full">
-          <img
-            class="sm:h-80 h-60"
-            src="./img/Image (2).svg"
-            alt=""
-          />
-          <h4 class="sm:text-4xl sm:font-normal text-2xl italic sm:w-60">
-            Luxury Hotel Renovation
-          </h4>
-          <span
-            class="text-lg font-light text-neutral-400 xl:w-full w-72 sm:inline-block block"
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
-            Faucibus fringilla dui amet faucibus nam.</span
-          >
-          <img
-            class="sm:h-80 h-60"
-            src="./img/Image (4).svg"
-            alt=""
-          />
-          <h4 class="sm:text-4xl sm:font-normal text-2xl italic sm:w-60">
-            Residence Swimming Pool
-          </h4>
-          <span
-            class="text-lg font-light text-neutral-400 xl:w-full w-72 sm:inline-block block"
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
-            Faucibus fringilla dui amet faucibus nam.</span
-          >
-          <br />
-          <button
-            class="button-contact xl:mt-24 sm:mt-8 text-sm sm:hidden mt-10 ml-5"
-          >
-            <a href="#">CONTACT US</a>
-          </button>
+      <div class="flex justify-center pb-5 xl:grid grid-flow-col min-w-0 xl:flex-no-wrap flex-col relative">
+        <div class="container-grid sm:grid-cols-3 grid-cols-1 sm:grid-rows-1 grid-rows-3">
+          <div class="one mb-5">
+            <img class="pl-5 pt-5" src="./svg/Service Icon.svg" alt="" />
+            <h2
+              class="mt-10 ml-6 mr-6 sm:text-4xl text-2xl sm:font-normal font-medium"
+            >
+              Architectural & Interior design
+            </h2>
+            <p class="text-lg font-normal ml-6 mr-6">
+              Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc,
+              molestie volutpat ipsum, ultricies.
+            </p>
+          </div>
+          <div class="two mb-5">
+            <img class="pl-5 pt-5" src="./svg/Service Icon (1).svg" alt="" />
+            <h2
+              class="mt-10 ml-6 mr-6 sm:text-4xl text-2xl sm:font-normal font-medium"
+            >
+              Building Renovation
+            </h2>
+            <p class="text-lg font-normal ml-6 mr-6">
+              Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc,
+              molestie volutpat ipsum, ultricies.
+            </p>
+          </div>
+          <div class="three mb-5">
+            <img class="pl-5 pt-5" src="./svg/Service Icon (2).svg" alt="" />
+            <h2
+              class="mt-10 ml-6 mr-6 sm:text-4xl text-2xl sm:font-normal font-medium"
+            >
+              Construciton Management
+            </h2>
+            <p class="text-lg font-normal ml-6 mr-6">
+              Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc,
+              molestie volutpat ipsum, ultricies.
+            </p>
+          </div>
         </div>
       </div>
-    </section>
 
-    <!-- Line -->
-    <div class="container_two-line sm:static"></div>
+      <!-- CF BLOCK -->
+      <section class="relative">
+        <div
+          class="container-grid sm:grid-cols-2 grid-cols-none sm:grid-rows-1 grid-rows-none"
+        >
+          <div class="">
+            <h5
+              class="uppercase text-yellow-500 sm:text-sm font-bold xl:text-2xl"
+            >
+              RECENT WORKS
+            </h5>
+            <h6
+              class="sm:text-6xl sm:normal italic font-normal text-3xl"
+            >
+              Some of our crafts made with love
+            </h6>
+            <img
+              class=""
+              src="./img/Image (3).svg"
+              alt=""
+            />
+            <h4 class="sm:text-4xl sm:font-normal text-2xl italic mt-6">
+              Villa Furnishing & Interior
+            </h4>
+            <span class="text-lg font-light text-neutral-400"
+              >Lorem ipsum dolor sit amet. <br />
+              Faucibus fringilla dui amet faucibus. <br />
+              Erat id laoreet posuere etiam morbi.</span
+            ><br />
+            <button
+              class="button-contact xl:mt-24 sm:mt-8 text-sm sm:inline-block hidden"
+            >
+              <a href="#">CONTACT US</a>
+            </button>
+          </div>
+          <div class="">
+            <img
+              class=""
+              src="./img/Image (2).svg"
+              alt=""
+            />
+            <h4 class="sm:text-4xl sm:font-normal text-2xl italic">
+              Luxury Hotel Renovation
+            </h4>
+            <span
+              class="text-lg font-light text-neutral-400 sm:inline-block block"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+              Faucibus fringilla dui amet faucibus nam.</span
+            >
+            <img
+              class=""
+              src="./img/Image (4).svg"
+              alt=""
+            />
+            <h4 class="sm:text-4xl sm:font-normal text-2xl italic">
+              Residence Swimming Pool
+            </h4>
+            <span
+              class="text-lg font-light text-neutral-400 sm:inline-block block"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+              Faucibus fringilla dui amet faucibus nam.</span
+            >
+            <br />
+            <button
+              class="button-contact xl:mt-24 sm:mt-8 text-sm sm:hidden mt-10 ml-5"
+            >
+              <a href="#">CONTACT US</a>
+            </button>
+          </div>
+        </div>
+      </section>
+  </main>
 
+
+    <div class="container_two-line mt-10"></div>
     <!-- FOOTER -->
-    <footer class="footer relative p-0">
+    <footer class="relative p-0 sm:mt-24 mt-10">
       <div class="container-grid flex justify-between">
         <div class="container flex flex-col sm:px-5 px-1">
-          <div class="dekstop-container-left sm:text-left">
+          <div class="sm:text-left">
             <h2 class="footer-contaiber-text">
               Launch your rowing experience with us!
             </h2>
@@ -697,7 +381,7 @@
             >
           </div>
           <div
-            class="dekstop-container-right flex-col text-left xl:min-w-full sm:text-right">
+            class="flex-col text-left sm:text-right">
             <h3 class="text-xl">Russia,Saint-Petersburg</h3>
             <span>Email:</span>
             <p><a href="m3sades@yandex.ru">m3sades@yandex.ru</a></p>
@@ -706,8 +390,8 @@
           </div>
         </div>
       </div>
-
-      <div class="container-footer flex xl:flex-col">
+      <div class="container_two-line mt-10"></div>
+      <div class="container-footer relative">
         <div
           class="dekstop-container1 grid sm:grid-rows-1 sm:grid-cols-2 grid-rows-1"
         >
