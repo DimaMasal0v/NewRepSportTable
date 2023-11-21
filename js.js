@@ -32,6 +32,17 @@ fetch('distance.json')
     });
   });
 
+//Burger menju
+document.addEventListener("DOMContentLoaded", function () {
+  const burgerBtn = document.querySelector(".menu__mobile-btn");
+  const menuOverlay = document.querySelector(".menu__overlay");
+
+  burgerBtn.addEventListener("click", function () {
+    const isOpen = menuOverlay.style.right === "0px";
+    menuOverlay.style.right = isOpen ? "250px" : "0px";
+    burgerBtn.querySelector(".menu__burger").style.transform = isOpen ? "rotate(0deg)" : "rotate(90deg)";
+  });
+});
 //   coachSelect.addEventListener('change', function() {
 //     var selectedCoach = coachSelect.value;
 

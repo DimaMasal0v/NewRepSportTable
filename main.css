@@ -22,7 +22,15 @@ html,
 body {
   height: 100%;
   overflow-x: hidden; /* Скрываем горизонтальный скролл */
+  overflow-x: hidden;
 }
+
+html {
+  display: table;
+  margin:0 auto;
+}
+
+
 
 /* Стили для медиазапроса, который применяется только для экранов с разрешением до 768px (по умолчанию для мобильных устройств) */
 @media (max-width: 768px) {
@@ -47,6 +55,40 @@ color: white;
 
 .gold {
   background-color: gold;
+}
+
+/* Burger Menu */
+.menu__mobile-btn {
+  cursor: pointer;
+  background-color: transparent;
+  width: 40px;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.menu__burger {
+  width: 40px;
+  height: 3px;
+  background-color: red;
+  position: relative;
+}
+.menu__burger::after {
+  width: 40px;
+  height: 3px;
+  background-color: blue;
+  position: absolute;
+  content: "";
+  bottom: -10px;
+}
+.menu__burger::before {
+  width: 40px;
+  height: 3px;
+  background-color: red;
+  content: "";
+  top: -10px;
+  position: absolute;
 }
 
 /* Body */
