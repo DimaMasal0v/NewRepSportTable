@@ -30,7 +30,7 @@
           src="img/image144-hz6s-200h.png"
           class=""
         />
-        <div class="sm:flex justify-between gap-5">
+        <!-- <div class="sm:flex justify-between gap-5">
             <div class="">
               <span class=" text-white sm:flex hidden"><span>Главная</span></span>
             </div>
@@ -41,11 +41,23 @@
             </div>
             <div class="">
               <span class=" text-white sm:flex hidden"><span>О нас</span></span>
-          </div>
-          <div class="menu__mobile-btn">
-            <div class="menu__burger">
-              
+          </div> -->
+          <!-- Burger Menu -->
+          <div class="menu__container">
+            <div class="menu__mobile-btn">
+              <div class="menu__burger"></div>
             </div>
+          
+            <div class="menu__overlay">
+              <div class="menu__close-btn">&times;</div>
+              <div class="menu__content">
+                <div class="menu__item">Главная</div>
+                <div class="menu__item">Результаты</div>
+                <div class="menu__item">О нас</div>
+              </div>
+            </div>
+          </div>
+          
           </div>
         </div>
       </div>
@@ -186,6 +198,21 @@
                 <tr class="flex flex-col flex-no wrap sm:table-row mb-6 sm:mb-0">
 
                 </tr>
+                <tr class="flex flex-col flex-no wrap sm:table-row mb-6 sm:mb-0">
+
+                </tr>
+                <tr class="flex flex-col flex-no wrap sm:table-row mb-6 sm:mb-0">
+
+                </tr>
+                <tr class="flex flex-col flex-no wrap sm:table-row mb-6 sm:mb-0">
+
+                </tr>
+                <tr class="flex flex-col flex-no wrap sm:table-row mb-6 sm:mb-0">
+
+                </tr>
+                <tr class="flex flex-col flex-no wrap sm:table-row mb-6 sm:mb-0">
+
+                </tr>
               </tbody>
             </table>
         </div>
@@ -194,17 +221,22 @@
     </section>
     <!-- 2xl:mt-16(большие экраны) sm:mt-8(маленькие экраны) -->
     <main class="relative">
+      <!-- <section class="relative -z-10">
+        <div class="main__img">
+          <img src="./svg/Creative (2).svg" alt="">
+        </div>
+      </section> -->
       <section class="relative">
         <div
-          class=" bg-gray-400 sm:h-56 h-72 mb-10 grid sm:grid-cols-12 grid-cols-4 gap-4 sm:gap-8"
+          class=" bg-gray-400 sm:h-32 h-72 mb-10 grid sm:grid-cols-12 grid-cols-4 gap-4 sm:gap-8 sm:pr-32 sm:pl-32"
         >
             <div>
-              <p class="select-text text-white flex bottom-10 top-4 left-10 absolute sm:pl-0 pl-5">
+              <p class="select-text text-white flex bottom-10 top-10 sm:left-10 left-20 absolute sm:pl-0 pl-5">
                 Награды
               </p>
             </div>
             <div
-              class="svg flex justify-center absolute left-36 2xl:mt-16 sm:mt-8 xl:flex-no-wrap flex-col xl:grid grid-flow-col"
+              class="svg flex justify-center absolute left-36 sm:mt-6 xl:flex-no-wrap flex-col xl:grid grid-flow-col"
             >
               <div
                 class="select_container-svg-1 sm:mr-8 sm:ml-0 -ml-20 flex justify-start sm:mt-0 mt-3"

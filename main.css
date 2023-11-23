@@ -82,14 +82,40 @@ color: white;
   content: "";
   bottom: -10px;
 }
-.menu__burger::before {
-  width: 40px;
-  height: 3px;
-  background-color: red;
-  content: "";
-  top: -10px;
-  position: absolute;
+.menu__overlay {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 100px;
+  height: 100%;
+  background-color: #999999;
+  padding-top: 60px;
+  transition: right 0.3s ease;
+  overflow-y: auto; /* Добавлено, чтобы добавить прокрутку, если контент меню превышает высоту окна */
+  z-index: 10;
 }
+
+.menu__overlay--open {
+  right: 0;
+}
+
+.menu__close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .menu__close-btn {
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+  }
+}
+
 
 /* Body */
 
@@ -592,8 +618,7 @@ a:hover {
 }
 
 .select-text {
-  position: absolute;
-  font-size: 50px;
+  font-size: 25px;
   transform: rotate(-90deg);
 }
 
@@ -724,3 +749,8 @@ a:hover {
     width: 592px;
     height: 444px;
   } */
+.main__img{
+  background-image: url(./svg/Creative\ \(2\).svg);
+  max-width: 1440px;
+  width: 1440px;
+}

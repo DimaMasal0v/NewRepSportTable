@@ -32,17 +32,22 @@ fetch('distance.json')
     });
   });
 
-//Burger menju
+//Close Burger Menu
 document.addEventListener("DOMContentLoaded", function () {
   const burgerBtn = document.querySelector(".menu__mobile-btn");
   const menuOverlay = document.querySelector(".menu__overlay");
+  const closeBtn = document.querySelector(".menu__close-btn");
 
   burgerBtn.addEventListener("click", function () {
-    const isOpen = menuOverlay.style.right === "0px";
-    menuOverlay.style.right = isOpen ? "250px" : "0px";
-    burgerBtn.querySelector(".menu__burger").style.transform = isOpen ? "rotate(0deg)" : "rotate(90deg)";
+    menuOverlay.classList.toggle("menu__overlay--open");
+  });
+
+  closeBtn.addEventListener("click", function () {
+    menuOverlay.classList.remove("menu__overlay--open");
   });
 });
+
+
 //   coachSelect.addEventListener('change', function() {
 //     var selectedCoach = coachSelect.value;
 
