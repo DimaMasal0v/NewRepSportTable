@@ -82,6 +82,15 @@ color: white;
   content: "";
   bottom: -10px;
 }
+.menu__burger::before {
+  width: 40px;
+  height: 3px;
+  background-color: blue;
+  position: absolute;
+  content: "";
+  bottom: 10px;
+}
+
 .menu__overlay {
   position: fixed;
   top: 0;
