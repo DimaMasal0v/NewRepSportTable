@@ -25,39 +25,18 @@
     <!-- Header -->
     <header class="bg-gray-400 text-white relative">
       <div class="container-grid flex justify-between items-center">
-        <img
-          alt="IMAGE144"
-          src="img/image144-hz6s-200h.png"
-          class=""
-        />
-        <!-- <div class="sm:flex justify-between gap-5">
-            <div class="">
-              <span class=" text-white sm:flex hidden"><span>Главная</span></span>
-            </div>
-            <div class="">
-              <span class=" text-white sm:flex hidden">
-                Результаты
-              </span>
-            </div>
-            <div class="">
-              <span class=" text-white sm:flex hidden"><span>О нас</span></span>
-          </div> -->
-          <!-- Burger Menu -->
-          <div class="menu__container">
-            <div class="menu__mobile-btn">
-              <div class="menu__burger"></div>
-            </div>
-          
-            <div class="menu__overlay">
-              <div class="menu__close-btn">&times;</div>
-              <div class="menu__content">
-                <div class="menu__item">Главная</div>
-                <div class="menu__item">Результаты</div>
-                <div class="menu__item">О нас</div>
-              </div>
-            </div>
+        <img alt="IMAGE144" src="img/image144-hz6s-200h.png" class="" />
+        <div class="menu__container">
+          <div class="menu__mobile-btn" id="menuBtn">
+            <div class="menu__burger"></div>
           </div>
-          
+          <div class="menu__overlay">
+            <div class="menu__close-btn" id="closeBtn">&times;</div>
+            <div class="menu__content">
+              <div class="menu__item">Главная</div>
+              <div class="menu__item">Результаты</div>
+              <div class="menu__item">О нас</div>
+            </div>
           </div>
         </div>
       </div>
@@ -73,7 +52,7 @@
             <p class="text-center mb-1 color-gold">
               Первенство Санкт-Петербурга по гребле-индор
             </p>
-            <span class="sm:mr-0 ml-2">17 Февраля 2023г.</span><br />
+            <span class="sm:mr-0 ml-2" id="date-competition">17 Февраля 2023г.</span><br />
             <div class="flex justify-end">
               <select
                 class="xl:grid w-28 border-black border-solid border-1"
@@ -105,113 +84,99 @@
             <!-- </div> -->
 
             <!-- Table 2 -->
-            <table class="sm:w-full w-80 flex flex-row flex-no-wrap sm:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5 text-center" id="table-sort">
-              <thead class="text-white">
-                <tr class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-5 sm:mb-0">
-                  <th class="p-3 text-left">№</th>
-                  <th class="p-3 text-left">ФИО</th>
-                  <th class="p-3 text-left">Дата</th>
-                  <th class="p-3 text-left">Разряд</th>
-                  <th class="p-3 text-left">Место</th>
-                  <th class="p-3 text-left">Время</th>
-                  <th class="p-3 text-left">Тренер</th>
-                </tr>
-                <tr
-                  class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
-                >
-                  <th class="p-3 text-left">№</th>
-                  <th class="p-3 text-left">ФИО</th>
-                  <th class="p-3 text-left">Дата</th>
-                  <th class="p-3 text-left">Разряд</th>
-                  <th class="p-3 text-left">Место</th>
-                  <th class="p-3 text-left">Время</th>
-                  <th class="p-3 text-left">Тренер</th>
-                </tr>
-                <tr
-                  class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
-                >
-                  <th class="p-3 text-left">№</th>
-                  <th class="p-3 text-left">ФИО</th>
-                  <th class="p-3 text-left">Дата</th>
-                  <th class="p-3 text-left">Разряд</th>
-                  <th class="p-3 text-left">Место</th>
-                  <th class="p-3 text-left">Время</th>
-                  <th class="p-3 text-left">Тренер</th>
-                </tr>
-                <tr
-                  class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
-                >
-                  <th class="p-3 text-left">№</th>
-                  <th class="p-3 text-left">ФИО</th>
-                  <th class="p-3 text-left">Дата</th>
-                  <th class="p-3 text-left">Разряд</th>
-                  <th class="p-3 text-left">Место</th>
-                  <th class="p-3 text-left">Время</th>
-                  <th class="p-3 text-left">Тренер</th>
-                </tr>
-                <tr
-                  class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
-                >
-                  <th class="p-3 text-left">№</th>
-                  <th class="p-3 text-left">ФИО</th>
-                  <th class="p-3 text-left">Дата</th>
-                  <th class="p-3 text-left">Разряд</th>
-                  <th class="p-3 text-left">Место</th>
-                  <th class="p-3 text-left">Время</th>
-                  <th class="p-3 text-left">Тренер</th>
-                </tr>
-                <tr
-                  class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
-                >
-                  <th class="p-3 text-left">№</th>
-                  <th class="p-3 text-left">ФИО</th>
-                  <th class="p-3 text-left">Дата</th>
-                  <th class="p-3 text-left">Разряд</th>
-                  <th class="p-3 text-left">Место</th>
-                  <th class="p-3 text-left">Время</th>
-                  <th class="p-3 text-left">Тренер</th>
-                </tr>
-                <tr
-                  class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
-                >
-                  <th class="p-3 text-left">№</th>
-                  <th class="p-3 text-left">ФИО</th>
-                  <th class="p-3 text-left">Дата</th>
-                  <th class="p-3 text-left">Разряд</th>
-                  <th class="p-3 text-left">Место</th>
-                  <th class="p-3 text-left">Время</th>
-                  <th class="p-3 text-left">Тренер</th>
-                </tr>
-                <tr
-                  class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
-                >
-                  <th class="p-3 text-left">№</th>
-                  <th class="p-3 text-left">ФИО</th>
-                  <th class="p-3 text-left">Дата</th>
-                  <th class="p-3 text-left">Разряд</th>
-                  <th class="p-3 text-left">Место</th>
-                  <th class="p-3 text-left">Время</th>
-                  <th class="p-3 text-left">Тренер</th>
-                </tr>
-              </thead>
-              <tbody class="flex-1 sm:flex-none text-center">
-                <tr class="flex flex-col flex-no wrap sm:table-row mb-6 sm:mb-0">
-
-                </tr>
-                <tr class="flex flex-col flex-no wrap sm:table-row mb-6 sm:mb-0">
-
-                </tr>
-                <tr class="flex flex-col flex-no wrap sm:table-row mb-6 sm:mb-0">
-
-                </tr>
-                <tr class="flex flex-col flex-no wrap sm:table-row mb-6 sm:mb-0">
-
-                </tr>
-                <tr class="flex flex-col flex-no wrap sm:table-row mb-6 sm:mb-0">
-
-                </tr>
-                <tr class="flex flex-col flex-no wrap sm:table-row mb-6 sm:mb-0">
-
+            <table
+            class="sm:w-full w-80 flex flex-row flex-no-wrap sm:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5 text-center"
+            >
+            <thead class="text-white">
+              <tr class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-5 sm:mb-0">
+                <th class="p-3 text-left">№</th>
+                <th class="p-3 text-left">ФИО</th>
+                <th class="p-3 text-left">Дата</th>
+                <th class="p-3 text-left">Разряд</th>
+                <th class="p-3 text-left">Место</th>
+                <th class="p-3 text-left">Время</th>
+                <th class="p-3 text-left">Тренер</th>
+              </tr>
+              <tr
+                class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
+              >
+                <th class="p-3 text-left">№</th>
+                <th class="p-3 text-left">ФИО</th>
+                <th class="p-3 text-left">Дата</th>
+                <th class="p-3 text-left">Разряд</th>
+                <th class="p-3 text-left">Место</th>
+                <th class="p-3 text-left">Время</th>
+                <th class="p-3 text-left">Тренер</th>
+              </tr>
+              <tr
+                class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
+              >
+                <th class="p-3 text-left">№</th>
+                <th class="p-3 text-left">ФИО</th>
+                <th class="p-3 text-left">Дата</th>
+                <th class="p-3 text-left">Разряд</th>
+                <th class="p-3 text-left">Место</th>
+                <th class="p-3 text-left">Время</th>
+                <th class="p-3 text-left">Тренер</th>
+              </tr>
+              <tr
+                class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
+              >
+                <th class="p-3 text-left">№</th>
+                <th class="p-3 text-left">ФИО</th>
+                <th class="p-3 text-left">Дата</th>
+                <th class="p-3 text-left">Разряд</th>
+                <th class="p-3 text-left">Место</th>
+                <th class="p-3 text-left">Время</th>
+                <th class="p-3 text-left">Тренер</th>
+              </tr>
+              <tr
+                class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
+              >
+                <th class="p-3 text-left">№</th>
+                <th class="p-3 text-left">ФИО</th>
+                <th class="p-3 text-left">Дата</th>
+                <th class="p-3 text-left">Разряд</th>
+                <th class="p-3 text-left">Место</th>
+                <th class="p-3 text-left">Время</th>
+                <th class="p-3 text-left">Тренер</th>
+              </tr>
+              <tr
+                class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
+              >
+                <th class="p-3 text-left">№</th>
+                <th class="p-3 text-left">ФИО</th>
+                <th class="p-3 text-left">Дата</th>
+                <th class="p-3 text-left">Разряд</th>
+                <th class="p-3 text-left">Место</th>
+                <th class="p-3 text-left">Время</th>
+                <th class="p-3 text-left">Тренер</th>
+              </tr>
+              <tr
+                class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
+              >
+                <th class="p-3 text-left">№</th>
+                <th class="p-3 text-left">ФИО</th>
+                <th class="p-3 text-left">Дата</th>
+                <th class="p-3 text-left">Разряд</th>
+                <th class="p-3 text-left">Место</th>
+                <th class="p-3 text-left">Время</th>
+                <th class="p-3 text-left">Тренер</th>
+              </tr>
+              <tr
+                class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
+              >
+                <th class="p-3 text-left">№</th>
+                <th class="p-3 text-left">ФИО</th>
+                <th class="p-3 text-left">Дата</th>
+                <th class="p-3 text-left">Разряд</th>
+                <th class="p-3 text-left">Место</th>
+                <th class="p-3 text-left">Время</th>
+                <th class="p-3 text-left">Тренер</th>
+              </tr>
+            </thead>
+              <tbody class="flex-1 sm:flex-none text-center" id="table-body">
+                <tr class="flex flex-col flex-no wrap sm:table-row mb-6 sm:mb-0" id="table-one">
                 </tr>
               </tbody>
             </table>
@@ -305,19 +270,21 @@
           <div
             class="container-grid sm:grid-cols-2 sm:grid-rows-none grid-cols-none grid-rows-1 sm:px-0 px-1">
             <!--container sm:flex ml-36 justify-between sm:mr-0 mr-72 xl:right-32 sm:left-60 xl:w-full w-full sm:px-0 px-1-->
-            <div class="container_two-text">
+            <div class="container_two-text" id="about-us">
               <h5
                 class="uppercase text-yellow-500 sm:text-sm font-bold xl:text-2xl"
+                id="about-us-title"
               >
                 about us
               </h5>
               <h6
                 class="sm:text-6xl italic sm:normal font-normal text-3xl"
+                id="about-us-subtitle"
               >
                 We help to bring your dream home to reality
               </h6>
-              <span class="xl:w-full sm:w-36"
-                >Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+              <span class="xl:w-full sm:w-36" id="about-us-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
                 Optio ipsam atque cupiditate temporibus corporis vitae, laborum
                 laboriosam laudantium iure eius nisi, doloremque labore
                 necessitatibus asperiores ducimus deserunt numquam repellat
@@ -341,134 +308,98 @@
         </section>
         <!-- Number -->
         <div class="flex justify-center sm:mb-5">
-            <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-3">100%</span
-            ><span class="text-sm pr-16 pt-2 sm:flex hidden"
-              >SATISFITATION <br />
-              CLIENTS</span
-            >
-            <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-3">250</span
-            ><span class="text-sm pr-16 pt-2 sm:flex hidden"
-              >EMPLOYEES ON <br />
-              WORLDWIDE</span
-            >
-            <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-3">3469</span
-            ><span class="text-sm pr-16 pt-2 sm:flex hidden"
-              >PROJECTS COMPLETED <br />
-              ON 60 COUNTRIES</span>
+          <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-3" id="clientsPercentage">100%</span>
+          <span class="text-sm pr-16 pt-2 sm:flex hidden" id="clientsText">SATISFITATION <br /> CLIENTS</span>
+          <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-3" id="employeesNumber">250</span>
+          <span class="text-sm pr-16 pt-2 sm:flex hidden" id="employeesText">EMPLOYEES ON <br /> WORLDWIDE</span>
+          <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-3" id="projectsCompleted">3469</span>
+          <span class="text-sm pr-16 pt-2 sm:flex hidden" id="projectsText">PROJECTS COMPLETED <br /> ON 60 COUNTRIES</span>
         </div>
+        
 
-      <div class="flex justify-center pb-5 xl:grid grid-flow-col min-w-0 xl:flex-no-wrap flex-col relative">
-        <div class="container-grid sm:grid-cols-3 grid-cols-1 sm:grid-rows-1 grid-rows-3">
-          <div class="one mb-5">
-            <img class="pl-5 pt-5" src="./svg/Service Icon.svg" alt="" />
-            <h2
-              class="mt-10 ml-6 mr-6 sm:text-4xl text-2xl sm:font-normal font-medium"
-            >
-              Architectural & Interior design
-            </h2>
-            <p class="text-lg font-normal ml-6 mr-6">
-              Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc,
-              molestie volutpat ipsum, ultricies.
-            </p>
+        <div class="flex justify-center pb-5 xl:grid grid-flow-col min-w-0 xl:flex-no-wrap flex-col relative">
+          <div class="container-grid sm:grid-cols-3 grid-cols-1 sm:grid-rows-1 grid-rows-3">
+            <div class="one mb-5" id="architecturalInteriorDesign">
+              <img class="pl-5 pt-5" src="./svg/Service Icon.svg" alt="" />
+              <h2 id="architecturalInteriorDesignTitle" class="mt-10 ml-6 mr-6 sm:text-4xl text-2xl sm:font-normal font-medium">
+                Architectural & Interior design
+              </h2>
+              <p id="architecturalInteriorDesignDescription" class="text-lg font-normal ml-6 mr-6">
+                Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc,
+                molestie volutpat ipsum, ultricies.
+              </p>
+            </div>
+            <div class="two mb-5" id="buildingRenovation">
+              <img class="pl-5 pt-5" src="./svg/Service Icon (1).svg" alt="" />
+              <h2 id="buildingRenovationTitle" class="mt-10 ml-6 mr-6 sm:text-4xl text-2xl sm:font-normal font-medium">
+                Building Renovation
+              </h2>
+              <p id="buildingRenovationDescription" class="text-lg font-normal ml-6 mr-6">
+                Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc,
+                molestie volutpat ipsum, ultricies.
+              </p>
+            </div>
+            <div class="three mb-5" id="constructionManagement">
+              <img class="pl-5 pt-5" src="./svg/Service Icon (2).svg" alt="" />
+              <h2 id="constructionManagementTitle" class="mt-10 ml-6 mr-6 sm:text-4xl text-2xl sm:font-normal font-medium">
+                Construction Management
+              </h2>
+              <p id="constructionManagementDescription" class="text-lg font-normal ml-6 mr-6">
+                Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc,
+                molestie volutpat ipsum, ultricies.
+              </p>
+            </div>
           </div>
-          <div class="two mb-5">
-            <img class="pl-5 pt-5" src="./svg/Service Icon (1).svg" alt="" />
-            <h2
-              class="mt-10 ml-6 mr-6 sm:text-4xl text-2xl sm:font-normal font-medium"
-            >
-              Building Renovation
-            </h2>
-            <p class="text-lg font-normal ml-6 mr-6">
-              Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc,
-              molestie volutpat ipsum, ultricies.
-            </p>
-          </div>
-          <div class="three mb-5">
-            <img class="pl-5 pt-5" src="./svg/Service Icon (2).svg" alt="" />
-            <h2
-              class="mt-10 ml-6 mr-6 sm:text-4xl text-2xl sm:font-normal font-medium"
-            >
-              Construciton Management
-            </h2>
-            <p class="text-lg font-normal ml-6 mr-6">
-              Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc,
-              molestie volutpat ipsum, ultricies.
-            </p>
-          </div>
-        </div>
-      </div>
+        </div>        
 
       <!-- CF BLOCK -->
-      <section class="relative">
-        <div
-          class="container-grid sm:grid-cols-2 grid-cols-none sm:grid-rows-1 grid-rows-none"
-        >
-          <div class="">
-            <h5
-              class="uppercase text-yellow-500 sm:text-sm font-bold xl:text-2xl"
-            >
+      <section class="relative" id="recent-works">
+        <div class="container-grid sm:grid-cols-2 grid-cols-none sm:grid-rows-1 grid-rows-none">
+          <div class="" id="recent-works-left">
+            <h5 class="uppercase text-yellow-500 sm:text-sm font-bold xl:text-2xl" id="recent-works-title">
               RECENT WORKS
             </h5>
-            <h6
-              class="sm:text-6xl sm:normal italic font-normal text-3xl"
-            >
+            <h6 class="sm:text-6xl sm:normal italic font-normal text-3xl" id="recent-works-subtitle">
               Some of our crafts made with love
             </h6>
-            <img
-              class=""
-              src="./img/Image (3).svg"
-              alt=""
-            />
-            <h4 class="sm:text-4xl sm:font-normal text-2xl italic mt-6">
+            <img class="" src="./img/Image (3).svg" alt="" />
+            <h4 class="sm:text-4xl sm:font-normal text-2xl italic mt-6" id="villa-title">
               Villa Furnishing & Interior
             </h4>
-            <span class="text-lg font-light text-neutral-400"
-              >Lorem ipsum dolor sit amet. <br />
+            <span class="text-lg font-light text-neutral-400" id="villa-description">
+              Lorem ipsum dolor sit amet. <br />
               Faucibus fringilla dui amet faucibus. <br />
-              Erat id laoreet posuere etiam morbi.</span
-            ><br />
-            <button
-              class="button-contact xl:mt-24 sm:mt-8 text-sm sm:inline-block hidden"
-            >
+              Erat id laoreet posuere etiam morbi.
+            </span>
+            <br />
+            <button class="button-contact xl:mt-24 sm:mt-8 text-sm sm:inline-block hidden">
               <a href="#">CONTACT US</a>
             </button>
           </div>
-          <div class="">
-            <img
-              class=""
-              src="./img/Image (2).svg"
-              alt=""
-            />
-            <h4 class="sm:text-4xl sm:font-normal text-2xl italic">
+          <div class="" id="recent-works-right">
+            <img class="" src="./img/Image (2).svg" alt="" />
+            <h4 class="sm:text-4xl sm:font-normal text-2xl italic" id="hotel-title">
               Luxury Hotel Renovation
             </h4>
-            <span
-              class="text-lg font-light text-neutral-400 sm:inline-block block"
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
-              Faucibus fringilla dui amet faucibus nam.</span
-            >
-            <img
-              class=""
-              src="./img/Image (4).svg"
-              alt=""
-            />
-            <h4 class="sm:text-4xl sm:font-normal text-2xl italic">
+            <span class="text-lg font-light text-neutral-400 sm:inline-block block" id="hotel-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+              Faucibus fringilla dui amet faucibus nam.
+            </span>
+            <img class="" src="./img/Image (4).svg" alt="" />
+            <h4 class="sm:text-4xl sm:font-normal text-2xl italic" id="pool-title">
               Residence Swimming Pool
             </h4>
-            <span
-              class="text-lg font-light text-neutral-400 sm:inline-block block"
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
-              Faucibus fringilla dui amet faucibus nam.</span
-            >
+            <span class="text-lg font-light text-neutral-400 sm:inline-block block" id="pool-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+              Faucibus fringilla dui amet faucibus nam.
+            </span>
             <br />
-            <button
-              class="button-contact xl:mt-24 sm:mt-8 text-sm sm:hidden mt-10 ml-5"
-            >
+            <button class="button-contact xl:mt-24 sm:mt-8 text-sm sm:hidden mt-10 ml-5">
               <a href="#">CONTACT US</a>
             </button>
           </div>
         </div>
-      </section>
+      </section>      
   </main>
 
 

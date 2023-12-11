@@ -1,0 +1,19 @@
+{
+    "services": [
+      {
+        "id": "architecturalInteriorDesign",
+        "title": "Architectural & Interior design",
+        "description": "Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies."
+      },
+      {
+        "id": "buildingRenovation",
+        "title": "Building Renovation",
+        "description": "Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies."
+      },
+      {
+        "id": "constructionManagement",
+        "title": "Construction Management",
+        "description": "Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies."
+      }
+    ]
+  }

@@ -125,6 +125,18 @@ color: white;
   }
 }
 
+/* Добавим класс, чтобы скрыть/показать бургер меню */
+.menu__overlay--hidden {
+  right: -250px;
+}
+.menu__overlay--expanded {
+  right: 0;
+  width: 300px;
+}
+/* Добавим стили для анимации появления/исчезновения */
+.menu__overlay--transition {
+  transition: right 0.3s ease;
+}
 
 /* Body */
 

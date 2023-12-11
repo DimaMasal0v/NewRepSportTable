@@ -11,26 +11,25 @@ coachList.forEach(function(coach) {
 
 fetch('distance.json')
 .then(response => response.json())
-.then(data => {
-  var table = document.getElementById('table-sort');
-  var tbody = table.querySelector('tbody');
-  data.forEach(row => {
-    var tr = document.createElement('tr');
+.then(jsonData => {
+  const tbody = document.getElementById('table-body');
+
+  jsonData.forEach((row) => {
+    const tr = document.createElement('tr');
+    tr.classList.add('flex', 'flex-col', 'flex-no', 'wrap', 'sm:table-row', 'mb-6', 'sm:mb-0');
     tr.innerHTML = `
-      <td>${row.number}</td>
-      <td>${row.Fio}</td>
-      <td>${row.Date}</td>
-      <td>${row.Discharge}</td>
-      <td>${row.Place}</td>
-      <td>${row.Time}</td>
-      <td>${row.Coach}</td>
+      <td class="border-grey-light border hover:bg-gray-100 p-3">${row.number}</td>
+      <td class="border-grey-light border hover:bg-gray-100 p-3">${row.Fio}</td>
+      <td class="border-grey-light border hover:bg-gray-100 p-3">${row.Date}</td>
+      <td class="border-grey-light border hover:bg-gray-100 p-3">${row.Discharge}</td>
+      <td class="border-grey-light border hover:bg-gray-100 p-3">${row.Place}</td>
+      <td class="border-grey-light border hover:bg-gray-100 p-3">${row.Time}</td>
+      <td class="border-grey-light border hover:bg-gray-100 p-3">${row.Coach}</td>
     `;
-    if (row.Place === 1) {
-      tr.classList.add('gold');
-    }
     tbody.appendChild(tr);
-    });
   });
+})
+.catch(error => console.error('Ошибка загрузки данных:', error));
 
 //Close Burger Menu
 document.addEventListener("DOMContentLoaded", function () {
@@ -46,6 +45,24 @@ document.addEventListener("DOMContentLoaded", function () {
     menuOverlay.classList.remove("menu__overlay--open");
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const menuBtn = document.getElementById('menuBtn');
+  const closeBtn = document.getElementById('closeBtn');
+  const menuOverlay = document.querySelector('.menu__overlay');
+
+  menuBtn.addEventListener('click', function () {
+    menuOverlay.classList.toggle('menu__overlay--hidden');
+    menuOverlay.classList.toggle('menu__overlay--expanded');
+  });
+
+  closeBtn.addEventListener('click', function () {
+    menuOverlay.classList.add('menu__overlay--hidden');
+    menuOverlay.classList.remove('menu__overlay--expanded');
+  });
+});
+
+
 
 
 //   coachSelect.addEventListener('change', function() {

@@ -1,0 +1,29 @@
+{
+    "statistics": {
+      "clientsPercentage": {
+        "text": "100%",
+        "id": "clientsPercentage"
+      },
+      "clientsText": {
+        "text": "SATISFITATION CLIENTS",
+        "id": "clientsText"
+      },
+      "employeesNumber": {
+        "text": "250",
+        "id": "employeesNumber"
+      },
+      "employeesText": {
+        "text": "EMPLOYEES ON WORLDWIDE",
+        "id": "employeesText"
+      },
+      "projectsCompleted": {
+        "text": "3469",
+        "id": "projectsCompleted"
+      },
+      "projectsText": {
+        "text": "PROJECTS COMPLETED ON 60 COUNTRIES",
+        "id": "projectsText"
+      }
+    }
+  }
+  
