@@ -141,4 +141,15 @@ document.addEventListener('DOMContentLoaded', function () {
 //         });
 //         updateTable('all');
 
-// Slider
+document.addEventListener('DOMContentLoaded', function () {
+  // Загрузка данных из JSON
+  fetch('./json/text__about__us.json')
+    .then(response => response.json())
+    .then(data => {
+      // Вставка данных в HTML
+      document.getElementById('about-us-title').textContent = data.aboutUs.title;
+      document.getElementById('about-us-subtitle').textContent = data.aboutUs.subtitle;
+      document.getElementById('about-us-text').innerHTML = data.aboutUs.description;
+    })
+    .catch(error => console.error('Error fetching JSON:', error));
+});
