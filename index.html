@@ -35,6 +35,7 @@
             <div class="menu__content">
               <div class="menu__item">Главная</div>
               <div class="menu__item">Результаты</div>
+              <div class="menu__item"><a href="./table.html">Таблица</a></div>
               <div class="menu__item">О нас</div>
             </div>
           </div>
@@ -46,13 +47,13 @@
       <div class="flex justify-center">
         <div class="table">
           <!-- 2xl:text-xl -->
-            <h1 class="font-bold uppercase text-3xl text-center mb-1 min-w-min">
-              Результаты соревнований
+            <h1 class="font-bold uppercase text-3xl text-center mb-1 min-w-min" id="table__title">
+
             </h1>
-            <p class="text-center mb-1 color-gold">
-              Первенство Санкт-Петербурга по гребле-индор
+            <p class="text-center mb-1 color-gold" id="table__subtitle">
+
             </p>
-            <span class="sm:mr-0 ml-2" id="date-competition">17 Февраля 2023г.</span><br />
+            <span class="sm:mr-0 ml-2" id="date-competition"></span><br />
             <div class="flex justify-end">
               <select
                 class="xl:grid w-28 border-black border-solid border-1"
@@ -84,7 +85,7 @@
             <!-- </div> -->
 
             <!-- Table 2 -->
-            <table
+            <!-- <table
             class="sm:w-full w-80 flex flex-row flex-no-wrap sm:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5 text-center"
             >
             <thead class="text-white">
@@ -179,7 +180,7 @@
                 <tr class="flex flex-col flex-no wrap sm:table-row mb-6 sm:mb-0" id="table-one">
                 </tr>
               </tbody>
-            </table>
+            </table> -->
         </div>
       </div>
       <div></div>
@@ -191,76 +192,34 @@
           <img src="./svg/Creative (2).svg" alt="">
         </div>
       </section> -->
-      <section class="relative">
-        <div
-          class=" bg-gray-400 sm:h-32 h-72 mb-10 grid sm:grid-cols-12 grid-cols-4 gap-4 sm:gap-8 sm:pr-32 sm:pl-32"
-        >
-            <div>
-              <p class="select-text text-white flex bottom-10 top-10 sm:left-10 left-20 absolute sm:pl-0 pl-5">
-                Награды
-              </p>
+      <section class="relative" id="awards-section">
+        <div class="bg-gray-400 sm:h-32 h-72 mb-10 grid sm:grid-cols-12 grid-cols-4 gap-4 sm:gap-8 sm:pr-32 sm:pl-32">
+          <div>
+            <p class="select-text text-white flex bottom-10 top-10 sm:left-10 left-20 absolute sm:pl-0 pl-5" id="awards-title">
+              Награды
+            </p>
+          </div>
+          <div class="svg flex justify-center absolute left-36 sm:mt-6 xl:flex-no-wrap flex-col xl:grid grid-flow-col" id="awards-container">
+            <div class="select_container-svg-1 sm:mr-8 sm:ml-0 -ml-20 flex justify-start sm:mt-0 mt-3" id="award-container-1">
+              <img class="sm:w-15 sm:h-15 w-15 h-15 mr-3" src="" alt="" id="award-img-1">
+              <span class="sm:text-sm text-xs font-normal text-white mt-3" id="award-text-1"></span>
             </div>
-            <div
-              class="svg flex justify-center absolute left-36 sm:mt-6 xl:flex-no-wrap flex-col xl:grid grid-flow-col"
-            >
-              <div
-                class="select_container-svg-1 sm:mr-8 sm:ml-0 -ml-20 flex justify-start sm:mt-0 mt-3"
-              >
-                <img
-                  class="sm:w-20 sm:h-20 w-15 h-15 mr-3"
-                  src="./svg/german-design-award.svg"
-                  alt=""
-                />
-                <span
-                  class="sm:text-sm text-xs font-normal text-white mt-3 sm:w-52 w-40"
-                  >German Design Awardbr <br />
-                  2021</span
-                >
-              </div>
-              <div
-                class="select_container-svg-2 sm:mr-8 sm:ml-0 -ml-20 flex justify-start"
-              >
-                <img
-                  class="sm:w-20 sm:h-20 w-15 h-15 mr-3"
-                  src="./svg/a-design-award.svg"
-                  alt=""
-                />
-                <span
-                  class="sm:text-sm text-xs font-normal text-white mt-5 sm:w-52 w-40"
-                  >Gold A’ Design Award <br />
-                  2021</span
-                >
-              </div>
-              <div
-                class="select_container-svg-3 sm:mr-8 sm:ml-0 -ml-20 flex justify-start"
-              >
-                <img
-                  class="sm:w-20 sm:h-20 w-15 h-15 mr-3"
-                  src="./svg/if-design-award.svg"
-                  alt=""
-                />
-                <span
-                  class="sm:text-sm text-xs font-normal text-white mt-5 sm:w-52 w-40"
-                  >IF Design Award <br />
-                  2020</span
-                >
-              </div>
-              <div
-                class="select_container-svg-4 sm:mr-8 sm:ml-0 -ml-20 flex justify-start sm:hidden"
-              >
-                <img
-                  class="sm:w-20 sm:h-20 w-15 h-15 mr-3"
-                  src="./svg/good-design-award.svg"
-                  alt=""
-                />
-                <span
-                  class="sm:text-sm text-xs font-normal text-white mt-5 sm:w-52 w-40"
-                  >Good Design Award <br />
-                  2019</span>
+            <div class="select_container-svg-2 sm:mr-8 sm:ml-0 -ml-20 flex justify-start" id="award-container-2">
+              <img class="sm:w-15 sm:h-15 w-15 h-15 mr-3" src="" alt="" id="award-img-2">
+              <span class="sm:text-sm text-xs font-normal text-white mt-5" id="award-text-2"></span>
+            </div>
+            <div class="select_container-svg-3 sm:mr-8 sm:ml-0 -ml-20 flex justify-start" id="award-container-3">
+              <img class="sm:w-15 sm:h-15 w-15 h-15 mr-3" src="" alt="" id="award-img-3">
+              <span class="sm:text-sm text-xs font-normal text-white mt-5" id="award-text-3"></span>
+            </div>
+            <div class="select_container-svg-4 sm:mr-8 sm:ml-0 -ml-20 flex justify-start" id="award-container-4">
+              <img class="sm:w-15 sm:h-15 w-15 h-15 mr-3" src="" alt="" id="award-img-4">
+              <span class="sm:text-sm text-xs font-normal text-white mt-5" id="award-text-4"></span>
             </div>
           </div>
         </div>
       </section>
+      
 
       <!-- Line -->
       <!-- <div class="relative">
@@ -290,58 +249,58 @@
               <!--sm:flex-row flex-col -->
               <img
                 class="sm:mb-10 sm:w-64 w-32 sm:pr-5"
-                src="./img/Image.svg"
+                src=""
                 alt=""
+                id="about-us__img"
               />
               <img
                 class="mt-15 sm:w-64 w-32"
-                src="./img/Image (1).svg"
+                src=""
                 alt=""
+                id="about-us__img1"
               />
             </div>
           </div>
         </section>
         <!-- Number -->
         <div class="flex justify-center sm:mb-5">
-          <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-3" id="clientsPercentage">100%</span>
-          <span class="text-sm pr-16 pt-2 sm:flex hidden" id="clientsText">SATISFITATION <br /> CLIENTS</span>
-          <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-3" id="employeesNumber">250</span>
-          <span class="text-sm pr-16 pt-2 sm:flex hidden" id="employeesText">EMPLOYEES ON <br /> WORLDWIDE</span>
-          <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-3" id="projectsCompleted">3469</span>
-          <span class="text-sm pr-16 pt-2 sm:flex hidden" id="projectsText">PROJECTS COMPLETED <br /> ON 60 COUNTRIES</span>
+          <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-5" id="clientsPercentage"></span>
+          <span class="text-sm pr-16 pt-2 sm:flex hidden" id="clientsText"></span>
+          <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-5" id="employeesNumber"></span>
+          <span class="text-sm pr-16 pt-2 sm:flex hidden" id="employeesText"></span>
+          <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-5" id="projectsCompleted"></span>
+          <span class="text-sm pr-16 pt-2 sm:flex hidden" id="projectsText"></span>
         </div>
+
         
 
         <div class="flex justify-center pb-5 xl:grid grid-flow-col min-w-0 xl:flex-no-wrap flex-col relative">
           <div class="container-grid sm:grid-cols-3 grid-cols-1 sm:grid-rows-1 grid-rows-3">
             <div class="one mb-5" id="architecturalInteriorDesign">
-              <img class="pl-5 pt-5" src="./svg/Service Icon.svg" alt="" />
+              <img class="pl-5 pt-5" src="" alt="" />
               <h2 id="architecturalInteriorDesignTitle" class="mt-10 ml-6 mr-6 sm:text-4xl text-2xl sm:font-normal font-medium">
-                Architectural & Interior design
+
               </h2>
               <p id="architecturalInteriorDesignDescription" class="text-lg font-normal ml-6 mr-6">
-                Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc,
-                molestie volutpat ipsum, ultricies.
+
               </p>
             </div>
             <div class="two mb-5" id="buildingRenovation">
-              <img class="pl-5 pt-5" src="./svg/Service Icon (1).svg" alt="" />
+              <img class="pl-5 pt-5" src="" alt="" />
               <h2 id="buildingRenovationTitle" class="mt-10 ml-6 mr-6 sm:text-4xl text-2xl sm:font-normal font-medium">
-                Building Renovation
+
               </h2>
               <p id="buildingRenovationDescription" class="text-lg font-normal ml-6 mr-6">
-                Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc,
-                molestie volutpat ipsum, ultricies.
+
               </p>
             </div>
             <div class="three mb-5" id="constructionManagement">
-              <img class="pl-5 pt-5" src="./svg/Service Icon (2).svg" alt="" />
+              <img class="pl-5 pt-5" src="" alt="" />
               <h2 id="constructionManagementTitle" class="mt-10 ml-6 mr-6 sm:text-4xl text-2xl sm:font-normal font-medium">
-                Construction Management
+
               </h2>
               <p id="constructionManagementDescription" class="text-lg font-normal ml-6 mr-6">
-                Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc,
-                molestie volutpat ipsum, ultricies.
+
               </p>
             </div>
           </div>
@@ -352,45 +311,41 @@
         <div class="container-grid sm:grid-cols-2 grid-cols-none sm:grid-rows-1 grid-rows-none">
           <div class="" id="recent-works-left">
             <h5 class="uppercase text-yellow-500 sm:text-sm font-bold xl:text-2xl" id="recent-works-title">
-              RECENT WORKS
+
             </h5>
             <h6 class="sm:text-6xl sm:normal italic font-normal text-3xl" id="recent-works-subtitle">
-              Some of our crafts made with love
+
             </h6>
-            <img class="" src="./img/Image (3).svg" alt="" />
+            <img id="recent-img" class="" src="" alt="" />
             <h4 class="sm:text-4xl sm:font-normal text-2xl italic mt-6" id="villa-title">
-              Villa Furnishing & Interior
+
             </h4>
             <span class="text-lg font-light text-neutral-400" id="villa-description">
-              Lorem ipsum dolor sit amet. <br />
-              Faucibus fringilla dui amet faucibus. <br />
-              Erat id laoreet posuere etiam morbi.
+
             </span>
             <br />
-            <button class="button-contact xl:mt-24 sm:mt-8 text-sm sm:inline-block hidden">
-              <a href="#">CONTACT US</a>
+            <button id="recent__btn" class="button-contact xl:mt-24 sm:mt-8 text-sm sm:inline-block hidden">
+              <a href="#"></a>
             </button>
           </div>
           <div class="" id="recent-works-right">
-            <img class="" src="./img/Image (2).svg" alt="" />
+            <img id="recent-img1" class="" src="" alt="" />
             <h4 class="sm:text-4xl sm:font-normal text-2xl italic" id="hotel-title">
-              Luxury Hotel Renovation
+
             </h4>
             <span class="text-lg font-light text-neutral-400 sm:inline-block block" id="hotel-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
-              Faucibus fringilla dui amet faucibus nam.
+
             </span>
-            <img class="" src="./img/Image (4).svg" alt="" />
+            <img id="recent-img2" class="" src="" alt="" />
             <h4 class="sm:text-4xl sm:font-normal text-2xl italic" id="pool-title">
-              Residence Swimming Pool
+
             </h4>
             <span class="text-lg font-light text-neutral-400 sm:inline-block block" id="pool-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
-              Faucibus fringilla dui amet faucibus nam.
+
             </span>
             <br />
-            <button class="button-contact xl:mt-24 sm:mt-8 text-sm sm:hidden mt-10 ml-5">
-              <a href="#">CONTACT US</a>
+            <button id="recent__btn" class="button-contact xl:mt-24 sm:mt-8 text-sm sm:hidden mt-10 ml-5">
+              <a href="#"></a>
             </button>
           </div>
         </div>
@@ -400,96 +355,100 @@
 
     <div class="container_two-line mt-10"></div>
     <!-- FOOTER -->
-    <footer class="relative p-0 sm:mt-24 mt-10">
+    <footer class="relative p-0 sm:mt-24 mt-10" id="footer">
       <div class="container-grid flex justify-between">
         <div class="container flex flex-col sm:px-5 px-1">
           <div class="sm:text-left">
-            <h2 class="footer-contaiber-text">
-              Launch your rowing experience with us!
+            <h2 class="footer-contaiber-text" id="footer-title">
+
             </h2>
-            <span class="footer-contaiber-text-2 underline color-gold"
-              >Send us a hi</span
+            <span class="footer-contaiber-text-2 underline color-gold" id="footer-send-hi"
+              ></span
             >
           </div>
-          <div
-            class="flex-col text-left sm:text-right">
-            <h3 class="text-xl">Russia,Saint-Petersburg</h3>
-            <span>Email:</span>
-            <p><a href="m3sades@yandex.ru">m3sades@yandex.ru</a></p>
-            <span>Phone:</span>
-            <p>+79214058984</p>
+          <div class="flex-col text-left sm:text-right">
+            <h3 class="text-xl" id="footer-location"></h3>
+            <span id="footer-email-label"></span>
+            <p id="footer-email"><a href="m3sades@yandex.ru"></a></p>
+            <span id="footer-phone-label"></span>
+            <p id="footer-phone"></p>
           </div>
         </div>
       </div>
-      <div class="container_two-line mt-10"></div>
+      <div class="container_two-line mt-10" id="footer-two-line"></div>
       <div class="container-footer relative">
-        <div
-          class="dekstop-container1 grid sm:grid-rows-1 sm:grid-cols-2 grid-rows-1"
-        >
-          <span
-            class="dekstop-text BodymdLight sm:text-left text-center"
-          >
-            <span>© 2023 Row-Compilition 2000m - 4000m</span>
+        <div class="dekstop-container1 grid sm:grid-rows-1 sm:grid-cols-2 grid-rows-1">
+          <span class="dekstop-text BodymdLight sm:text-left text-center" id="footer-copyright">
+            <span></span>
           </span>
           <div class="dekstop-right-section sm:flex hidden">
             <div class="dekstop-eyebrow">
-              <span class="dekstop-text02 BodysmtrackingWidestSemiBold">
-                <span>CONNECT</span>
+              <span class="dekstop-text02 BodysmtrackingWidestSemiBold" id="footer-connect">
+                <span></span>
               </span>
               <img
                 alt="Line4202"
-                src="img/line4202-25gc.svg"
+                src=""
                 class="dekstop-line"
+                id="footer-connect-line"
               />
             </div>
             <div class="dekstop-social-icons">
               <img
                 alt="RingI420"
-                src="img/ringi420-lmd-200h.png"
+                src=""
                 class="dekstop-ring"
+                id="footer-social-icon-1"
               />
               <img
                 alt="SocialiconI420"
-                src="img/socialiconi420-kaek.svg"
+                src=""
                 class="dekstop-socialicon"
+                id="footer-social-icon-2"
               />
             </div>
             <div class="dekstop-social-icons">
               <div class="dekstop-socialicon1">
                 <img
                   alt="FrameI420"
-                  src="img/framei420-kgr.svg"
+                  src=""
                   class="dekstop-frame"
+                  id="footer-social-icon-3"
                 />
               </div>
               <img
                 alt="RingI420"
-                src="img/ringi420-yrg-200h.png"
+                src=""
                 class="dekstop-ring1"
+                id="footer-social-icon-4"
               />
             </div>
             <div class="dekstop-social-icons">
               <img
                 alt="SocialiconI420"
-                src="img/socialiconi420-22hk.svg"
+                src=""
                 class="dekstop-socialicon2"
+                id="footer-social-icon-5"
               />
               <img
                 alt="RingI420"
-                src="img/ringi420-tkr9-200h.png"
+                src=""
                 class="dekstop-ring2"
+                id="footer-social-icon-6"
               />
             </div>
             <div class="dekstop-social-icons">
               <img
                 alt="SocialiconI420"
-                src="img/socialiconi420-113a.svg"
+                src=""
                 class="dekstop-socialicon3"
+                id="footer-social-icon-7"
               />
               <img
                 alt="RingI420"
-                src="img/ringi420-dqd-200h.png"
+                src=""
                 class="dekstop-ring3"
+                id="footer-social-icon-8"
               />
             </div>
           </div>

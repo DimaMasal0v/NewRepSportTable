@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+        <!-- Header -->
+    <header class="bg-gray-400 text-white relative">
+            <div class="container-grid flex justify-between items-center">
+              <img alt="IMAGE144" src="img/image144-hz6s-200h.png" class="" />
+              <div class="menu__container">
+                <div class="menu__mobile-btn" id="menuBtn">
+                  <div class="menu__burger"></div>
+                </div>
+                <div class="menu__overlay">
+                  <div class="menu__close-btn" id="closeBtn">&times;</div>
+                  <div class="menu__content">
+                    <div class="menu__item">Главная</div>
+                    <div class="menu__item">Результаты</div>
+                    <div class="menu__item"><a href="">Таблица</a></div>
+                    <div class="menu__item">О нас</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </header>
+      
+    <section class="relative">
+            <div class="flex justify-center">
+              <div class="table">
+                <!-- 2xl:text-xl -->
+                  <h1 class="font-bold uppercase text-3xl text-center mb-1 min-w-min" id="table__title">
+      
+                  </h1>
+                  <p class="text-center mb-1 color-gold" id="table__subtitle">
+      
+                  </p>
+                  <span class="sm:mr-0 ml-2" id="date-competition"></span><br />
+                  <div class="flex justify-end">
+                    <select
+                      class="xl:grid w-28 border-black border-solid border-1"
+                      id="coach-select"
+                    ></select>
+                    <button
+                      class="p-5 bg-gray-300 mr-5 sm:flex hidden"
+                      id="filter-button">Сортировка</button>
+                  </div>
+                  <!-- Table 1 -->
+                  <!-- <div class="border border-solid border-black p-10 rounded-sm"> -->
+                  <!-- <table class="table_sort xl:grid table-auto flex flex-row flex-no-wrap xl:bg-white rounded-lg overflow-hidden sm:shadow-lg" id="table-sort">
+                                  <thead class="bg-gray-400">
+                                      <tr class="flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
+                                          <th>№</th>
+                                          <th>ФИО</th>
+                                          <th>Год Рождения</th>
+                                          <th>Разряд</th>
+                                          <th>Место</th>
+                                          <th>Время</th>
+                                          <th>Тренер</th>
+                                      </tr>
+                                  </thead>
+      
+                                  <tbody class="flex-1 sm:flex-none" id="distance">
+      
+                                  </tbody>
+                            </table> -->
+                  <!-- </div> -->
+      
+                  <!-- Table 2 -->
+                  <table
+                  class="sm:w-full w-80 flex flex-row flex-no-wrap sm:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5 text-center"
+                  >
+                  <thead class="text-white">
+                    <tr class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-5 sm:mb-0">
+                      <th class="p-3 text-left">№</th>
+                      <th class="p-3 text-left">ФИО</th>
+                      <th class="p-3 text-left">Дата</th>
+                      <th class="p-3 text-left">Разряд</th>
+                      <th class="p-3 text-left">Место</th>
+                      <th class="p-3 text-left">Время</th>
+                      <th class="p-3 text-left">Тренер</th>
+                    </tr>
+                    <tr
+                      class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
+                    >
+                      <th class="p-3 text-left">№</th>
+                      <th class="p-3 text-left">ФИО</th>
+                      <th class="p-3 text-left">Дата</th>
+                      <th class="p-3 text-left">Разряд</th>
+                      <th class="p-3 text-left">Место</th>
+                      <th class="p-3 text-left">Время</th>
+                      <th class="p-3 text-left">Тренер</th>
+                    </tr>
+                    <tr
+                      class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
+                    >
+                      <th class="p-3 text-left">№</th>
+                      <th class="p-3 text-left">ФИО</th>
+                      <th class="p-3 text-left">Дата</th>
+                      <th class="p-3 text-left">Разряд</th>
+                      <th class="p-3 text-left">Место</th>
+                      <th class="p-3 text-left">Время</th>
+                      <th class="p-3 text-left">Тренер</th>
+                    </tr>
+                    <tr
+                      class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
+                    >
+                      <th class="p-3 text-left">№</th>
+                      <th class="p-3 text-left">ФИО</th>
+                      <th class="p-3 text-left">Дата</th>
+                      <th class="p-3 text-left">Разряд</th>
+                      <th class="p-3 text-left">Место</th>
+                      <th class="p-3 text-left">Время</th>
+                      <th class="p-3 text-left">Тренер</th>
+                    </tr>
+                    <tr
+                      class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
+                    >
+                      <th class="p-3 text-left">№</th>
+                      <th class="p-3 text-left">ФИО</th>
+                      <th class="p-3 text-left">Дата</th>
+                      <th class="p-3 text-left">Разряд</th>
+                      <th class="p-3 text-left">Место</th>
+                      <th class="p-3 text-left">Время</th>
+                      <th class="p-3 text-left">Тренер</th>
+                    </tr>
+                    <tr
+                      class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
+                    >
+                      <th class="p-3 text-left">№</th>
+                      <th class="p-3 text-left">ФИО</th>
+                      <th class="p-3 text-left">Дата</th>
+                      <th class="p-3 text-left">Разряд</th>
+                      <th class="p-3 text-left">Место</th>
+                      <th class="p-3 text-left">Время</th>
+                      <th class="p-3 text-left">Тренер</th>
+                    </tr>
+                    <tr
+                      class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
+                    >
+                      <th class="p-3 text-left">№</th>
+                      <th class="p-3 text-left">ФИО</th>
+                      <th class="p-3 text-left">Дата</th>
+                      <th class="p-3 text-left">Разряд</th>
+                      <th class="p-3 text-left">Место</th>
+                      <th class="p-3 text-left">Время</th>
+                      <th class="p-3 text-left">Тренер</th>
+                    </tr>
+                    <tr
+                      class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0"
+                    >
+                      <th class="p-3 text-left">№</th>
+                      <th class="p-3 text-left">ФИО</th>
+                      <th class="p-3 text-left">Дата</th>
+                      <th class="p-3 text-left">Разряд</th>
+                      <th class="p-3 text-left">Место</th>
+                      <th class="p-3 text-left">Время</th>
+                      <th class="p-3 text-left">Тренер</th>
+                    </tr>
+                  </thead>
+                    <tbody class="flex-1 sm:flex-none text-center" id="table-body">
+                      <tr class="flex flex-col flex-no wrap sm:table-row sm:mt-0 mt-0 sm:ml-0 -ml-28" id="table-one">
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+            </div>
+            <div></div>
+    </section>
+    <script src="js.js"></script>
+</body>
+</html>

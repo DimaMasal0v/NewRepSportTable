@@ -1,0 +1,24 @@
+{
+    "footer": {
+      "title": "Launch your rowing experience with us!",
+      "sendHi": "Send us a hi",
+      "location": "Russia, Saint-Petersburg",
+      "emailLabel": "Email:",
+      "email": "<a href='mailto:m3sades@yandex.ru'>m3sades@yandex.ru</a>",
+      "phoneLabel": "Phone:",
+      "phone": "+79214058984",
+      "copyright": "© 2023 Row-Compilation 2000m - 4000m",
+      "connectLabel": "CONNECT",
+      "socialIcons": [
+        "img/ringi420-lmd-200h.png",
+        "img/socialiconi420-kaek.svg",
+        "img/framei420-kgr.svg",
+        "img/ringi420-yrg-200h.png",
+        "img/socialiconi420-22hk.svg",
+        "img/ringi420-tkr9-200h.png",
+        "img/socialiconi420-113a.svg",
+        "img/ringi420-dqd-200h.png"
+      ]
+    }
+  }
+  

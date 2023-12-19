@@ -1,38 +1,55 @@
 {
-    "recentWorks": {
-      "left": {
-        "title": "RECENT WORKS",
-        "subtitle": "Some of our crafts made with love",
-        "images": [
-          "./img/Image (3).svg"
-        ],
-        "projects": [
-          {
-            "title": "Villa Furnishing & Interior",
-            "description": "Lorem ipsum dolor sit amet. <br /> Faucibus fringilla dui amet faucibus. <br /> Erat id laoreet posuere etiam morbi."
-          }
-        ],
-        "button": {
-          "text": "CONTACT US",
-          "link": "#"
+  "recentWorks": {
+    "left": {
+      "title": "RECENT WORKS",
+      "subtitle": "Some of our crafts made with love",
+      "images": [
+        {
+          "id": "recent-img",
+          "src": "./img/Image (3).svg",
+          "alt": "Villa Furnishing & Interior"
         }
-      },
-      "right": {
-        "projects": [
-          {
-            "title": "Luxury Hotel Renovation",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Faucibus fringilla dui amet faucibus nam."
-          },
-          {
-            "title": "Residence Swimming Pool",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Faucibus fringilla dui amet faucibus nam."
-          }
-        ],
-        "button": {
-          "text": "CONTACT US",
-          "link": "#"
+      ],
+      "projects": [
+        {
+          "title": "Villa Furnishing & Interior",
+          "description": "Lorem ipsum dolor sit amet. <br /> Faucibus fringilla dui amet faucibus. <br /> Erat id laoreet posuere etiam morbi."
         }
+      ],
+      "button": {
+        "id": "recent__btn",
+        "text": "CONTACT US",
+        "link": "#"
+      }
+    },
+    "right": {
+      "images": [
+        {
+          "id": "recent-img1",
+          "src": "./img/Image (2).svg",
+          "alt": "Luxury Hotel Renovation"
+        },
+        {
+          "id": "recent-img2",
+          "src": "./img/Image (4).svg",
+          "alt": "Residence Swimming Pool"
+        }
+      ],
+      "projects": [
+        {
+          "title": "Luxury Hotel Renovation",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Faucibus fringilla dui amet faucibus nam."
+        },
+        {
+          "title": "Residence Swimming Pool",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Faucibus fringilla dui amet faucibus nam."
+        }
+      ],
+      "button": {
+        "id": "recent__btn",
+        "text": "CONTACT US",
+        "link": "#"
       }
     }
   }
-  
+}
