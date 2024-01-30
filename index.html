@@ -23,16 +23,16 @@
   </head>
   <body class="scroll-mr-64">
     <!-- Header -->
-    <header class="bg-gray-400 text-white relative">
+    <header class="bg-gray-400 text-white relative px-2">
       <div class="container-grid flex justify-between items-center">
         <img alt="IMAGE144" src="img/image144-hz6s-200h.png" class="" />
         <div class="menu__container">
           <div class="menu__mobile-btn" id="menuBtn">
             <div class="menu__burger"></div>
           </div>
-          <div class="menu__overlay">
-            <div class="menu__close-btn" id="closeBtn">&times;</div>
-            <div class="menu__content">
+          <div class="menu__overlay sm:top-1/2 sm:left-1/2 left-36 top-2/4 h-full sm:max-w-7xl max-w-full">
+            <div class="menu__close-btn sm:text-8xl text-4xl" id="closeBtn">&times;</div>
+            <div class="menu__content sm:text-8xl text-4xl">
               <div class="menu__item">Главная</div>
               <div class="menu__item">Результаты</div>
               <div class="menu__item"><a href="./table.html">Таблица</a></div>
@@ -50,18 +50,18 @@
             <h1 class="font-bold uppercase text-3xl text-center mb-1 min-w-min" id="table__title">
 
             </h1>
-            <p class="text-center mb-1 color-gold" id="table__subtitle">
+            <!-- <p class="text-center mb-1 color-gold" id="table__subtitle">
 
-            </p>
+            </p> -->
             <span class="sm:mr-0 ml-2" id="date-competition"></span><br />
             <div class="flex justify-end">
               <select
-                class="xl:grid w-28 border-black border-solid border-1"
+                class="xl:grid w-28 border-black border-solid border-1 hidden"
                 id="coach-select"
               ></select>
-              <button
+              <!-- <button
                 class="p-5 bg-gray-300 mr-5 sm:flex hidden"
-                id="filter-button">Сортировка</button>
+                id="filter-button">Сортировка</button> -->
             </div>
             <!-- Table 1 -->
             <!-- <div class="border border-solid border-black p-10 rounded-sm"> -->
@@ -242,34 +242,34 @@
               >
 
               </h6>
-              <span class="xl:w-full sm:w-36" id="about-us-text"></span
+              <span class="" id="about-us-text"></span
               >
             </div>
             <div class="flex justify-between sm:mr-32">
               <!--sm:flex-row flex-col -->
               <img
-                class="sm:mb-10 sm:w-64 w-32 sm:pr-5"
-                src=""
-                alt=""
-                id="about-us__img"
-              />
-              <img
-                class="mt-15 sm:w-64 w-32"
-                src=""
-                alt=""
-                id="about-us__img1"
-              />
+              class="sm:mb-10 sm:w-64 sm:h-96 w-32 h-60"
+              src="./img/Image.svg"
+              alt=""
+            />
+            <img
+              class="sm:ma-5 ml-4 mt-15 sm:w-64 sm:h-96 w-32 h-60"
+              src="./img/Image (1).svg"
+              alt=""
+            />
             </div>
           </div>
         </section>
         <!-- Number -->
-        <div class="flex justify-center sm:mb-5">
-          <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-5" id="clientsPercentage"></span>
-          <span class="text-sm pr-16 pt-2 sm:flex hidden" id="clientsText"></span>
-          <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-5" id="employeesNumber"></span>
-          <span class="text-sm pr-16 pt-2 sm:flex hidden" id="employeesText"></span>
-          <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-5" id="projectsCompleted"></span>
-          <span class="text-sm pr-16 pt-2 sm:flex hidden" id="projectsText"></span>
+        <div class="sm:mb-5">
+          <div class="container-grid flex">
+            <span class="xl:text-6xl sm:text-xs sm:flex hidden" id="clientsPercentage"></span>
+            <span class="text-sm pt-2 sm:flex hidden" id="clientsText"></span>
+            <span class="xl:text-6xl sm:text-xs sm:flex hidden" id="employeesNumber"></span>
+            <span class="text-sm pt-2 sm:flex hidden" id="employeesText"></span>
+            <span class="xl:text-6xl sm:text-xs sm:flex hidden" id="projectsCompleted"></span>
+            <span class="text-sm pt-2 sm:flex hidden" id="projectsText"></span>
+          </div>
         </div>
 
         
