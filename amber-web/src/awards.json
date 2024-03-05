@@ -1,0 +1,40 @@
+{
+    "awardsSection": {
+      "title": "Награды",
+      "awards": [
+        {
+          "containerId": "award-container-1",
+          "imgId": "award-img-1",
+          "textId": "award-text-1",
+          "imgSrc": "./svg/\german-design-award.svg",
+          "imgAlt": "German Design Award",
+          "text": "German Design Award<br />2021"
+        },
+        {
+          "containerId": "award-container-2",
+          "imgId": "award-img-2",
+          "textId": "award-text-2",
+          "imgSrc": "./svg/a-design-award.svg",
+          "imgAlt": "Gold A’ Design Award",
+          "text": "Gold A’ Design Award<br />2021"
+        },
+        {
+          "containerId": "award-container-3",
+          "imgId": "award-img-3",
+          "textId": "award-text-3",
+          "imgSrc": "./svg/if-design-award.svg",
+          "imgAlt": "IF Design Award",
+          "text": "IF Design Award<br />2020"
+        },
+        {
+          "containerId": "award-container-4",
+          "imgId": "award-img-4",
+          "textId": "award-text-4",
+          "imgSrc": "./svg/good-design-award.svg",
+          "imgAlt": "Good Design Award",
+          "text": "Good Design Award<br />2019"
+        }
+      ]
+    }
+  }
+  

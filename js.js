@@ -1,6 +1,6 @@
 //Select/Index
 var coachSelect = document.getElementById('coach-select');
-var coachList = ['Все тренера:', 'Мерк', 'Герасимов', 'Иванов', 'Сема', 'Андреев'];
+var coachList = [];
 
 coachList.forEach(function(coach) {
   var option = document.createElement('option');
